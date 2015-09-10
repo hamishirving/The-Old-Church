@@ -8,7 +8,7 @@ body {
 
 h1 {
 	font-family: $font-secondary;
-	font-size: em(48);
+	font-size: em(42);
 	line-height: 1.25;
 	letter-spacing: 1px;
 
@@ -21,7 +21,7 @@ h1 {
 	}
 
 	@include media($mobile) {
-		font-size: em(26);
+		font-size: em(24);
 	}
 }
 
@@ -29,6 +29,10 @@ h2 {
 	font-size: em(36);
 	line-height: 1.25;
 	letter-spacing: 1px;
+
+	@include media($mobile) {
+		font-size: em(28);
+	}
 }
 
 h3 {

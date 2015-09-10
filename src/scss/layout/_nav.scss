@@ -1,0 +1,166 @@
+.nav {
+	text-align: center;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			padding: 15px;
+			margin-top: -5px;
+
+			a {
+				text-decoration: none;
+				color: $color-dark;
+				font-size: 14px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+  	}
+	@include media($mobile) {
+		display: none;
+	}
+
+  	&.nav-fixed {
+  		position: fixed;
+  		top: 0;
+  		width: 100%;
+  		background: #fff;
+  		z-index: 10;
+  		margin-top: -55px;
+		transition: all 400ms ease;
+  		border-top: 4px solid $color-primary;
+
+  		@include media($mobile) {
+  			display: none;
+  		}
+  	}
+}
+
+.nav-mobile {
+	display: none;
+
+	@include media($mobile) {
+		display: block;
+	}
+
+  	.menu-opener {
+  		width: 21px;
+  		height: 12px;
+		top: 40px;
+	    right: 5%;
+	    height: 12px;
+	    position: absolute;
+	    cursor: pointer;
+
+  		span,
+  		&:before,
+  		&:after {
+  			top: 5px;
+		    left: 0;
+		    height: 2px;
+		    width: 100%;
+		    position: absolute;
+		    background: $color-primary;
+		    transition: all .2s linear;
+  		}
+
+  		&:before,
+  		&:after {
+  			content: "";
+  			top: 0;
+  		}
+
+  		&:after {
+  			top: 10px;
+  		}
+  	}
+}
+
+ .mobile-nav-overlay {
+ 	opacity: 0;
+ 	visibility: hidden;
+ 	height: 100%;
+ 	width: 100%;
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	bottom: 0;
+ 	right: 0;
+ 	color: #fff;
+	text-align: center;
+ 	z-index: 100;
+ 	transition: all 500ms ease;
+
+ 	&.open {
+ 		opacity: 1;
+ 		visibility: visible;
+ 		background: $color-primary;
+ 		opacity: .95;
+ 	}
+
+	ul {
+		list-style: none;
+		padding: 0 5%;
+		position: relative;
+		top: 50%;
+		margin-top: -150px;
+
+		li {
+			display: block;
+			width: 100%; 
+			padding: 15px 5px;
+
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-size: 20px;
+				font-weight: 700;
+				text-transform: uppercase;
+				width: 100%;
+    			display: inline-block;
+    			margin: 0;
+			}
+		}
+  	}
+
+  	.close-menu {
+  		width: 21px;
+  		height: 12px;
+		top: 40px;
+	    right: 5%;
+	    height: 12px;
+	    position: absolute;
+	    cursor: pointer;
+
+  		span,
+  		&:before,
+  		&:after {
+  			top: 5px;
+		    left: 0;
+		    height: 2px;
+		    width: 100%;
+		    position: absolute;
+		    background: #fff;
+		    transition: all .2s linear;
+  		}
+
+  		span {
+  			opacity: 0;
+  		}
+
+  		&:before,
+  		&:after {
+  			content: "";
+  			top: 5px;
+  			transform: rotate(45deg);
+  		}
+
+  		&:after {
+  			transform: rotate(-45deg);
+  		}
+  	}
+}

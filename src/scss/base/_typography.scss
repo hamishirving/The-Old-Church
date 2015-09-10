@@ -1,0 +1,47 @@
+body {
+	font-family: $font-primary;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	color: $color-dark;
+}
+
+h1 {
+	font-family: $font-secondary;
+	font-size: em(48);
+	line-height: 1.25;
+	letter-spacing: 1px;
+
+	@include media($desktop) {
+		font-size: em(36);
+	}
+
+	@include media($tablet) {
+		font-size: em(30);
+	}
+
+	@include media($mobile) {
+		font-size: em(26);
+	}
+}
+
+h2 {
+	font-size: em(36);
+	line-height: 1.25;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-size: em(24);
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: em(14);
+}
+
+label {
+	font-size: em(16);
+	font-weight: 700;
+}

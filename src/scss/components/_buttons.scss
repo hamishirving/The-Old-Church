@@ -1,0 +1,33 @@
+button {
+	height: 60px;
+	padding: 15px;
+	border: none;
+	background: transparent;
+	color: #fff;
+	font-size: em(14);
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+
+	&.btn-primary {
+		background: $color-primary;
+
+		&:hover {
+			background: shade($color-primary, 10%);
+		}
+	}
+
+	&.btn-outline {
+		background: transparent;
+		border: 2px solid $color-primary;
+		color: $color-primary;
+
+		&:hover {
+			background: rgba($color-primary, .05);
+		}
+	}
+
+	&.btn-block {
+		width: 100%;
+	}
+}

@@ -1,0 +1,22 @@
+// Typography
+
+$font-primary		: "brandon-grotesque",sans-serif;
+$font-secondary		: "acta-display",sans-serif;
+
+// Colours
+
+$color-primary		: #b20000; 		// Red
+$color-secondary	: #E2F0F2;		// Ligh green/blue
+$color-dark			: #234047; 		// Dark Blue
+$color-light		: #FDF5D2;		// Yellow
+
+// Grid
+
+$grid-columns		: 16 !global;	// Overrides Neat settings (12)
+$visual-grid		: false !global;
+
+// Breakpoints
+
+$mobile: new-breakpoint(max-width 480px);
+$tablet: new-breakpoint(max-width 768px);
+$desktop: new-breakpoint(max-width 1080px);

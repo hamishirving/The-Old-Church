@@ -1,0 +1,118 @@
+.footer {
+	background-color: $color-secondary;
+	padding: 80px 0;
+	border-bottom: 4px solid $color-primary;
+
+		@include media($tablet) {
+			padding: 40px 0;
+		}
+
+		@include media($mobile) {
+			text-align: center;
+		}
+
+	.logo {
+		width: 220px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		
+		@include media($tablet) {
+			display: none;
+		}
+	}
+
+	h4 {
+		text-transform: uppercase;
+		margin-bottom: 30px;
+
+		@include media($tablet) {
+			margin-top: 40px;
+			margin-bottom: 15px;
+		}
+
+		@include media($mobile) {
+			margin-top: 20px;
+		}
+
+	}
+
+	.signup {
+		@include span-columns(4);
+
+		@include media($tablet) {
+			@include span-columns(12);
+			@include shift(2);
+		}
+
+		@include media($mobile) {
+			@include span-columns(16);
+			@include shift(0);
+		}
+
+		form {
+			position: relative;
+
+			label {
+				position: absolute;
+				top: 10px;
+				left: 15px;
+			}
+
+			.text-field {
+				height: 60px;
+				width: 100%;
+				border: none;
+				border-style: none;
+				padding: 25px 10px 5px 15px;
+				margin-bottom: 10px;
+			}
+
+			button {
+				@include media($tablet) {
+					margin-bottom: 15px;
+				}
+
+				@include media($mobile) {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+	.footer-links {
+		@include span-columns(3);
+
+			@include media($tablet) {
+				@include span-columns(4);
+			}
+
+			@include media($mobile) {
+				@include span-columns(16);
+			}
+
+		a {
+			width: 100%;
+			margin-top: -5px;
+			float: left;
+		}
+	}
+
+	.footer-text {
+		@include span-columns(3);
+
+			@include media($tablet) {
+				@include span-columns(4);
+			}
+
+			@include media($mobile) {
+				@include span-columns(16);
+				// @include omega;
+			}
+
+		p {
+			font-size: em(14);
+			margin-top: -5px;
+			margin-bottom: 20px;		
+		}
+	}
+}

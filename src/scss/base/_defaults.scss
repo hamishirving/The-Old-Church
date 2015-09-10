@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+	@include outer-container;
+
+	@include media($desktop) {
+		padding: 0 5%;	
+	}
+
+	@include media($tablet) {
+		padding: 0 5%;
+	}
+}

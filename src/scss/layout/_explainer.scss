@@ -1,0 +1,45 @@
+.explainer {
+	background-color: $color-light;
+	margin-top: -140px;
+	padding-top: 140px;
+	text-align: center;
+
+	@include media($tablet) {
+		margin-top: -100px;
+	}
+
+	@include media($mobile) {
+		margin-top: -60px;
+	}
+
+	.quote {
+		font-family: $font-secondary;
+		color: #fff;
+		font-size: em(140);
+
+		&.open {
+			margin-bottom: -110px;
+
+			@include media($tablet) {
+				margin-top: -60px;
+			}
+
+			@include media($mobile) {
+				margin-top: -100px;
+			}
+		}
+
+		&.close {
+			margin-top: -40px;
+			margin-bottom: -40px;
+
+			@include media($tablet) {
+				margin-bottom: -70px;
+			}
+
+			@include media($mobile) {
+				margin-top: -40px;
+			}
+		}
+	}
+}

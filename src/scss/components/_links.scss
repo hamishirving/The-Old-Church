@@ -1,0 +1,36 @@
+// Hover animation under li elements
+
+nav {
+	li {
+		display: inline-block;
+		position: relative;
+		padding-bottom: 3px;
+
+		&:after {
+			content: '';
+			display: block;
+			margin: auto;
+			height: 2px;
+			width: 0px;
+			background: transparent;
+			transition: width .3s ease, background-color .3s ease;
+		}
+
+		&:hover:after {
+			width: 100%;
+			background: $color-primary;
+		}
+	}	
+}
+
+a {
+	margin-bottom: 20px;
+	font-size: em(14);
+	text-decoration: none;
+	transition: all 300ms ease;
+	color: $color-dark;
+
+	&:hover {
+		color: tint($color-dark, 40%);
+	}
+}

@@ -1,49 +1,181 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title>FastShell by @_Karamii</title>
+    <head>
+        <meta charset="utf-8">
+        <title>FastShell by @_Karamii</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link href="//www.google-analytics.com" rel="dns-prefetch">
-    <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="assets/css/style.min.css" rel="stylesheet">
+        <link href="//www.google-analytics.com" rel="dns-prefetch">
+        <link href="//ajax.googleapis.com" rel="dns-prefetch">
+        <link href="assets/css/style.min.css" rel="stylesheet">
+        <script src="https://use.typekit.net/nee2qdm.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <script src="assets/components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
+        <script src="assets/components/modernizr/modernizr.js"></script>
+    </head>
 
+    <body>
     <header class="header" role="banner">
-      <div class="logo">
-        <a href="/">
-          <img src="assets/img/logo.png" alt="Logo">
-        </a>
-      </div>
-      <nav class="nav" role="navigation">
-        <ul>
-          <li>
-            <a href="/"></a>
-          </li>
-        </ul>
-      </nav>
+        <div class="container">
+            <nav class="nav nav-mobile" role="navigation">
+                <div class="menu-opener">
+                    <span></span>
+                </div>
+            </nav>
+            <div class="mobile-nav-overlay">
+                <div class="close-menu">
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Weddings</a></li>
+                    <li><a href="#">Functions</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="/"><img src="assets/img/logo@2x.png" alt="Logo"></a>
+            </div>
+            <div class="logo-small">
+                <a href="/"><img src="assets/img/logo-left@2x.png" alt="Logo"></a>
+            </div>
+            <nav class="nav" role="navigation">
+                <ul>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Weddings</a></li>
+                    <li><a href="#">Functions</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <nav class="nav nav-fixed" role="navigation">
+        <ul>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Functions</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-    <main class="main" role="main">
+    <section class="slider">
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/fig-salad@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/conservatory-summer@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/hero-table@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/wedding-front@2x.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
+        </div>
+    </section>
 
-    </main>
+    <section class="explainer" id="scrollToggle">
+        <div class="container">
+            <div class="quote open">“</div>
+            <h1>A stunning Hawke’s Bay landmark converted into a plush, quirky restaurant &amp; bar perfect for casual dining, weddings, functions &amp; events.</h1>
+            <div class="quote close">”</div>
+        </div>
+    </section>
 
-    <aside class="sidebar" role="complementary">
+    <section class="video-section">
+        <div class="container">
+            <div class="play-video">
+                <img id="play-button" src="assets/img/play.svg">
+                <img id="pause-button" src="assets/img/pause.svg">
+            </div>
+            <div class="video-container">
+                <div class="video-frame">
+                    <iframe src="https://player.vimeo.com/video/99451597?title=0&byline=0&portrait=0?api=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="video"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </aside>
+    <section class="news">
+        <div class="container">
+            <div class="news-outline">
+                <h2>Latest News</h2>
+                <div class="news-wrapper">
+                    <h3>The Old Church Restaurant introduces her glamorous sister:</h3>
+                    <h1>The Villa</h1>
+                    <div class="left">
+                        <p>The Villa is the perfect place for a gathering of family, friend or business colleagues.</p>
+                        <p>The beautifully restored historic Villa is steeped in history and full of character..... A perfect place to spend a winters evening.</p>
+                        <p>Have a pre-dinner drink in front of the fire and then move into one of the three intimate dining spaces or down to the cellar to enjoy a wonderful menu and wine list designed to compliment the glamour of the Villa.</p>
+                        <p>Private rooms are available for groups of 6 - 12. Of course, big sister "The Old Church" is right next door and will continue to host larger groups, functions and weddings.</p>
+                        <p>Come and visit the new experience in town.... We promise you won't be disappointed!</p>
+                        <button class="btn-outline btn-block">Reserve a table</button>
+                    </div>
+                    <div class="right">
+                        <img src="assets/img/villa-dining@2x.jpg">
+                        <img src="assets/img/villa-gold-room@2x.jpg" class="square">
+                        <img src="assets/img/villa-fire@2x.jpg" class="square">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer" role="contentinfo">
-
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="assets/img/logo@2x.png" alt="Logo"></a>
+            </div>
+            <div class="signup">
+                <h4>Join our mailing list:</h4>
+                <form>
+                    <label for="email">Email</label>
+                    <input class="text-field" id="email" type="email" name="email" required>
+                    <button class="btn-primary btn-block">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <h4>Handy links:</h4>
+                <a href="#">Nearby Accommodation</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="footer-text">
+                <h4>Opening hours:</h4>
+                <p>THU: Dinner</p>
+                <p>FRI/SAT: Lunch &amp; Dinner</p>
+                <p>SUN: Brunch</p>
+            </div>
+            <div class="footer-text">
+                <h4>Contact:</h4>
+                <p><a href="tel:+6468448866">+64 6 844 8866</a></p>
+                <p><a href="mailto:info@theoldchurch.co.nz">info@theoldchurch.co.nz</a></p>
+            </div>
+            <div class="footer-text">
+                <h4>Address:</h4>
+                <p>199 Meeanee Road</p>
+                <p>Napier</p>
+                <p>Hawke's Bay</p>
+                <p>New Zealand</p>
+            </div>
+        </div>
     </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/froogaloop.js"></script>
     <script src="assets/js/scripts.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -743,6 +743,9 @@ html {
     .container {
       padding: 0 5%; } }
 
+.placeholder {
+  height: 500px; }
+
 body {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 16px;

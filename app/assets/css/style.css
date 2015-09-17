@@ -1033,7 +1033,8 @@ input {
   text-align: center; }
 
 .logo {
-  margin-top: 20px; }
+  margin-top: 40px;
+  margin-bottom: 20px; }
   @media screen and (max-width: 480px)  {
     .logo {
       display: none; } }
@@ -1085,7 +1086,7 @@ input {
           margin-top: -40px; } }
 
 .video-section {
-  padding: 80px 0; }
+  padding: 150px 0; }
   @media screen and (max-width: 480px)  {
     .video-section {
       padding: 40px 0; } }
@@ -1143,7 +1144,7 @@ input {
         height: 100%; }
 
 .news {
-  padding: 80px 0;
+  padding: 150px 0;
   background: #F2E9E2; }
   .news .news-outline {
     float: left;
@@ -1261,7 +1262,7 @@ input {
 
 .footer {
   background-color: #E2F0F2;
-  padding: 80px 0;
+  padding: 150px 0;
   border-bottom: 4px solid #b20000; }
   @media screen and (max-width: 768px)  {
     .footer {

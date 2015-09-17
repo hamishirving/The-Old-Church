@@ -7,19 +7,10 @@
  * Copyright 2015. MIT licensed.
  */
 $( document ).ready(function() {
+
     // ----
     // Mobile Nav
     // ----
-    // var close = $('.close-menu');
-    // var open = $('.menu-opener');
-
-    // close.on('click', function() {
-    //     $('.mobile-nav-overlay').hide();
-    // });
-
-    // open.on('click', function() {
-    //     $('.mobile-nav-overlay').fadeToggle('slow');
-    // })
 
     $('.menu-opener, .close-menu').click(function (e) {
         $('.mobile-nav-overlay').toggleClass('open');
@@ -39,7 +30,7 @@ $( document ).ready(function() {
     });
 
     // ----
-    // ## Scroll Toggle https://github.com/shorttompkins/scrollToggle
+    // Scroll Toggle Navigation (https://github.com/shorttompkins/scrollToggle)
     // ----
 
     var ScrollToggle = function (top, callbackShow, callbackHide) {
@@ -73,21 +64,18 @@ $( document ).ready(function() {
         })();
     };
 
-    // Id of the 
+    // Id of the element which triggers ScrollToggle
     var myScroller = new ScrollToggle($('#scrollToggle').position().top, function () {
-        // console.log("Element has been reached.");
         // Element to show
         $('.nav-fixed').css({'margin-top':'0'});
     }, function () {
-        // console.log("Element is gone.");
         // Element to hide
         $('.nav-fixed').css({'margin-top':'-55px'});
     });
 
+    // ----
     // Froogaloop - Play Vimeo video on button click
-    // https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/froogaloop.js
-    // https://github.com/vimeo/player-api/blob/master/javascript/froogaloop.js
-    // http://a.vimeocdn.com/js/froogaloop2.min.js
+    // ----
 
     var iframe = document.getElementById('video');
 
@@ -107,5 +95,14 @@ $( document ).ready(function() {
       player.api("pause");
       $(this).hide();
       $('#play-button').show();
+    });
+
+    // ----
+    // Fastclick
+    // ----
+
+    $(function() {
+        var attachFastClick = Origami.fastclick;
+        attachFastClick(document.body);
     });
 });

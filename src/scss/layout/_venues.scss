@@ -1,0 +1,68 @@
+.venues {
+	padding: 120px 0;
+
+	.tabs-stacked {
+		@include span-columns(4);
+		@include shift(1);
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+
+		li {
+			list-style-type: none;
+	    	padding: 20px;
+			border: 2px solid #BEE1E6;
+			height: 60px;
+			width: 100%;
+			display: inline-block;
+			font-size: em(16);
+			line-height: em(20);
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			margin: 0;
+			margin-bottom: 20px;
+
+			&:hover {
+				background: $color-secondary;
+				color: $color-dark;
+			}
+
+			&.active {
+				background: $color-secondary;
+			}
+		}
+	}	
+
+	.tabs-content {
+		@include span-columns(10);
+		@include shift(1);
+
+		h2 {
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+
+		.content {
+			@include span-columns(14);
+			// text-align: justify;
+
+
+			img {
+				@include span-columns(7);
+				margin-top: 10px;
+				margin-bottom: 5px;
+				margin-left: 20px;
+				// margin-right: 15px;
+				float: right;
+			}
+		}
+
+
+	}
+}

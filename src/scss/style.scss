@@ -2,6 +2,8 @@
 @import 'vendor/clearfix';
 @import 'vendor/normalize';
 @import 'vendor/swiper';
+@import 'vendor/animate';
+@import 'vendor/tabby';
 
 // Bourbon
 @import 'bourbon/bourbon';
@@ -25,6 +27,7 @@
 @import 'components/lists';
 @import 'components/misc';
 @import 'components/slider';
+@import 'components/hero';
 
 // Layout
 @import 'layout/nav';
@@ -33,6 +36,8 @@
 @import 'layout/video';
 @import 'layout/news';
 @import 'layout/footer';
+@import 'layout/menu';
+@import 'layout/venues';
 
 // Pages
 @import 'pages/index';

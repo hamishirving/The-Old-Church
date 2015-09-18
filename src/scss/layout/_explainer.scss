@@ -1,7 +1,7 @@
 .explainer {
 	background-color: $color-secondary;
-	margin-top: -140px;
-	padding-top: 140px;
+	margin-top: -125px;
+	padding: 185px 12.5% 40px 12.5%;
 	text-align: center;
 
 	@include media($tablet) {
@@ -14,7 +14,7 @@
 
 	.quote {
 		font-family: $font-secondary;
-		color: #fff;
+		color: #BEE1E6;
 		font-size: em(140);
 
 		&.open {

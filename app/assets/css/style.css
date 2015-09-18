@@ -4197,7 +4197,8 @@ input {
         display: block;
         margin-right: 1.75788%;
         width: 100%;
-        padding-top: 20px; }
+        padding-top: 20px;
+        text-align: center; }
         .venues .tabs-content:last-child {
           margin-right: 0; } }
     .venues .tabs-content h2 {

@@ -3558,11 +3558,9 @@ input {
   color: #fff;
   text-shadow: none; }
 
-.slider {
-  background: #fffafa; }
-  .slider .swiper-slide img {
-    max-width: 100%;
-    height: auto; }
+.slider .swiper-slide img {
+  max-width: 100%;
+  height: auto; }
 
 .hero img {
   max-width: 100%;
@@ -3701,8 +3699,7 @@ input {
 
 .header {
   border-top: 4px solid #b20000;
-  text-align: center;
-  background: #fffafa; }
+  text-align: center; }
 
 .logo {
   margin-top: 40px;
@@ -4069,8 +4066,6 @@ input {
     margin: 0;
     padding: 0;
     height: 60px;
-    width: 100%;
-    display: inline-block;
     font-size: 1em;
     line-height: 1.25em;
     font-weight: 700;
@@ -4088,13 +4083,28 @@ input {
       border: 2px solid #d1b7a3; }
       .menu ul a:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 480px)  {
+        .menu ul a {
+          float: left;
+          display: block;
+          margin-right: 1.75788%;
+          width: 100%;
+          margin-bottom: 10px; }
+          .menu ul a:last-child {
+            margin-right: 0; } }
       .menu ul a:hover {
         background: #e9dbd0;
         color: #234047; }
       .menu ul a.active {
         background: #e9dbd0; }
   .menu .tabs-content {
+    float: left;
+    display: block;
+    margin-right: 1.75788%;
+    width: 100%;
     padding-top: 20px; }
+    .menu .tabs-content:last-child {
+      margin-right: 0; }
     .menu .tabs-content .tabs-pane {
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease; }
@@ -4129,6 +4139,23 @@ input {
     padding: 0; }
     .venues .tabs-stacked:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px)  {
+      .venues .tabs-stacked {
+        float: left;
+        display: block;
+        margin-right: 1.75788%;
+        width: 36.40133%;
+        margin-left: 0%; }
+        .venues .tabs-stacked:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px)  {
+      .venues .tabs-stacked {
+        float: left;
+        display: block;
+        margin-right: 1.75788%;
+        width: 100%; }
+        .venues .tabs-stacked:last-child {
+          margin-right: 0; } }
     .venues .tabs-stacked li {
       list-style-type: none;
       padding: 20px;
@@ -4144,8 +4171,10 @@ input {
     .venues .tabs-stacked a {
       display: block;
       width: 100%;
-      margin: 0;
       margin-bottom: 20px; }
+      @media screen and (max-width: 480px)  {
+        .venues .tabs-stacked a {
+          margin-bottom: 10px; } }
       .venues .tabs-stacked a:hover {
         background: #E2F0F2;
         color: #234047; }
@@ -4159,6 +4188,18 @@ input {
     margin-left: 6.35987%; }
     .venues .tabs-content:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px)  {
+      .venues .tabs-content {
+        margin-left: 0%; } }
+    @media screen and (max-width: 480px)  {
+      .venues .tabs-content {
+        float: left;
+        display: block;
+        margin-right: 1.75788%;
+        width: 100%;
+        padding-top: 20px; }
+        .venues .tabs-content:last-child {
+          margin-right: 0; } }
     .venues .tabs-content h2 {
       margin-top: 0;
       margin-bottom: 15px; }
@@ -4169,6 +4210,14 @@ input {
       width: 87.28027%; }
       .venues .tabs-content .content:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 768px)  {
+        .venues .tabs-content .content {
+          float: left;
+          display: block;
+          margin-right: 1.75788%;
+          width: 100%; }
+          .venues .tabs-content .content:last-child {
+            margin-right: 0; } }
       .venues .tabs-content .content img {
         float: left;
         display: block;
@@ -4180,3 +4229,14 @@ input {
         float: right; }
         .venues .tabs-content .content img:last-child {
           margin-right: 0; }
+        @media screen and (max-width: 768px)  {
+          .venues .tabs-content .content img {
+            float: left;
+            display: block;
+            margin-right: 1.75788%;
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 15px;
+            margin-top: 0; }
+            .venues .tabs-content .content img:last-child {
+              margin-right: 0; } }

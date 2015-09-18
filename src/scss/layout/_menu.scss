@@ -8,8 +8,6 @@
     	margin: 0;
     	padding: 0;
 		height: 60px;
-		width: 100%;
-		display: inline-block;
 		font-size: em(16);
 		line-height: em(20);
 		font-weight: 700;
@@ -23,6 +21,11 @@
 			float: none;
 			border: 2px solid #d1b7a3;
 
+			@include media($mobile) {
+				@include span-columns(16);
+				margin-bottom: 10px;
+			}
+
 			&:hover {
 				background: #e9dbd0;
 				color: $color-dark;
@@ -35,6 +38,7 @@
 	}
 
 	.tabs-content {
+		@include span-columns(16);
 		padding-top: 20px;
 
 		.tabs-pane {

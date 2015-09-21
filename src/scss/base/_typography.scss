@@ -1,6 +1,6 @@
 body {
 	font-family: $font-primary;
-	font-size: 16px;
+	font-size: em(16);
 	line-height: 1.5;
 	font-weight: 400;
 	color: $color-dark;
@@ -46,6 +46,7 @@ h4 {
 }
 
 p {
+	font-size: em(18);
 	margin-top: em(5);
 	margin-bottom: em(15);
 }
@@ -53,4 +54,18 @@ p {
 label {
 	font-size: em(16);
 	font-weight: 700;
+}
+
+blockquote {
+	font-family: $font-secondary;
+	font-size: em(24);
+	margin: 0 0 em(10) 0;
+	padding-left: 15px;
+	border-left: 4px solid $color-secondary;
+	text-align: left;
+	display: inline-block;
+
+	@include media($mobile) {
+		font-size: em(18);
+	}
 }

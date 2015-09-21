@@ -13,7 +13,6 @@
         <link href="assets/css/style.min.css" rel="stylesheet">
         <script src="https://use.typekit.net/nee2qdm.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
         <script src="assets/components/modernizr/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -64,8 +63,89 @@
         </ul>
     </nav>
 
-    <section class="placeholder">
+    <section class="slider">
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/wedding-front@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/food-long-plate@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/food-dessert@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/wedding-front@2x.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
+        </div>
+    </section>
 
+    <section class="explainer scrollToggle">
+        <div class="container fadein">
+            <div class="quote open">“</div>
+            <h1>The celebration of love is a time-honoured tradition and there is no single event more beautiful, romantic or joyous than your wedding day!</h1>
+            <div class="quote close">”</div>
+        </div>
+    </section>
+
+    <section class="venues">
+        <div class="container">
+            <ul class="tabs tabs-stacked">
+                <a data-target="#tab4" href="#" class="active"><li>The Old Church</li></a><!--
+                --><a data-target="#tab5" href="#"><li>The Villa</li></a><!--
+                --><a data-target="#tab6" href="#"><li>The Cellar</li></a><!--
+                --><a data-target="#tab7" href="#"><li>The Conservatory</li></a>
+            </ul>
+            <div class="tabs-content">
+                <div class="tabs-pane active" id="tab4">
+                    <h1><span>The Old Church</span></h1>
+                    <div class="content">
+                        <img src="assets/img/loft-wedding@2x.jpg">
+                        <p>The Old Church in Meeanee has a fascinating history dating back 150 years to its first incarnation in 1862 when the missionaries began planting vines and cultivating the land around St Mary’s. The brothers were popular, industrious and very successful farmers, sharing their skills and ideas freely.
+                        Their warm hospitality, easy friendship and legendary culinary skills made the mission a favourite stopping place for travellers and it is in their esteemed footsteps that this tradition continues today.</p>                        
+                        <blockquote>Set amongst the vines, with a stunning aspect to the Ruahines, Kaweka’s and the setting sun, the unswerving attention to detail and luxurious décor make this a stunning Hawke’s Bay landmark.</blockquote>
+                        <p>The vision for The Old Church has been realised by creating an unsurpassed blend of nostalgia and chic indulgence. The unique experience of The Old Church will be a memory to treasure for years to come.</p>
+                        <img src="assets/img/wedding-hedge@2x.jpg">
+                    </div>
+                </div>
+
+                <div class="tabs-pane" id="tab5">
+                    <h1><span>The Villa</span></h1>
+                    <div class="content">
+                        <blockquote>The Villa is perfect for smaller weddings of 4 to 50 guests.</blockquote>
+                        <img src="assets/img/wedding-inside-window@2x.jpg" class="img-right">
+                        <p>Hidden away under the villa is the intimate wine cellar. Perfect for a small dinner party of up to 15 people.</p>
+                        <p>Hidden away under the villa is the intimate wine cellar. Perfect for a small dinner party of up to 15 people. Nowhere else will you find such a deliciously decadent gathering place for complete indulgence.</p>
+                    </div>
+                </div>
+
+                <div class="tabs-pane" id="tab6">
+                    <h1><span>The Cellar</span></h1>
+                    <div class="content">
+                        <img src="assets/img/food-long-plate@2x.jpg">
+                        <p>Enjoy the Cellar for your intimate dinner party wedding. Located discreetly below The Old Church Villa, this exquisite setting can cater for up to 12 for an evening of great company, fabulous food and fine wine.</p>
+                        <blockquote>Step it up for a special occasion and dine under the magnificent chandelier.</blockquote>
+                        <p>Set amongst the vines, with a stunning aspect to the Ruahines, Kawekes and the setting sun you can be certain that whatever way you choose to experience The Old Church it will result in fabulous food, wines, service and atmosphere. The unique experience of The Old Church will be a memory to enjoy for years to come.</p>
+                    </div>
+                </div>
+
+                <div class="tabs-pane" id="tab7">
+                    <h1><span>The Conservatory</span></h1>
+                    <div class="content">
+                        <p>The Conservatory and courtyard can be hired privately for weddings of up to 40.</p>
+                        <blockquote>Step it up for a special occasion and dine under the magnificent chandelier.</blockquote>
+                        <img src="assets/img/food-long-plate@2x.jpg">
+                        <p>Set amongst the vines, with a stunning aspect to the Ruahines, Kawekes and the setting sun you can be certain that whatever way you choose to experience The Old Church it will result in fabulous food, wines, service and atmosphere. The unique experience of The Old Church will be a memory to enjoy for years to come.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer" role="contentinfo">
@@ -94,8 +174,8 @@
             </div>
             <div class="footer-links">
                 <h4>Contact:</h4>
-                <p><a href="tel:+6468448866">+64 6 844 8866</a></p>
-                <p><a href="mailto:info@theoldchurch.co.nz">info@theoldchurch.co.nz</a></p>
+                <a href="tel:+6468448866">+64 6 844 8866</a>
+                <a href="mailto:info@theoldchurch.co.nz">info@theoldchurch.co.nz</a>
             </div>
             <div class="footer-text">
                 <h4>Address:</h4>
@@ -108,6 +188,9 @@
     </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/fastclick.min.js"></script>
+    <script src="assets/js/tabby.js"></script>
     <script src="assets/js/scripts.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

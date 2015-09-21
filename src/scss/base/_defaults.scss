@@ -4,8 +4,13 @@
   text-rendering: optimizeLegibility;
 }
 
+html, body {
+  height: 100%;
+}
+
 .container {
 	@include outer-container;
+  height: 100%;
 
 	@include media($desktop) {
 		padding: 0 5%;	

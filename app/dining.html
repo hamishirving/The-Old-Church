@@ -13,7 +13,6 @@
         <link href="assets/css/style.min.css" rel="stylesheet">
         <script src="https://use.typekit.net/nee2qdm.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
         <script src="assets/components/modernizr/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -30,6 +29,7 @@
                     <span></span>
                 </div>
                 <ul>
+                    <li><a href="/">Home</a></li>
                     <li><a href="dining.html">Dining</a></li>
                     <li><a href="weddings.html">Weddings</a></li>
                     <li><a href="functions.html">Functions</a></li>
@@ -64,13 +64,30 @@
         </ul>
     </nav>
 
-    <section class="hero">
+    <section class="slider">
         <div class="container">
-            <img src="assets/img/food-long-plate@2x.jpg">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/food-chef-hand@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/food-long-plate@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/food-dessert@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/wedding-front@2x.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
         </div>
     </section>
 
-    <section class="explainer" id="scrollToggle">
+    <section class="explainer scrollToggle">
         <div class="container fadein">
             <div class="quote open">“</div>
             <h1>Our award winning Chefs bring an exotic global perspective with a local Hawkes Bay focus to The Old Church Restaurant.</h1>
@@ -87,32 +104,34 @@
             </ul>
             <div class="tabs-content">
                 <div class="tabs-pane active" id="tab1">
-                    <h2>The Villa</h2>
+                    <h1><span>The Villa</span></h1>
                     <div class="content">
-                        <img src="assets/img/food-long-plate@2x.jpg">
-                        <p>As the latest dining experience in Hawkes Bay, The Old Church Villa is the perfect place for a gathering of friends, family or business colleagues.</p>
-                        <p>The beautifully restored historic Villa is steeping in history and full of character... A perfect place to spend a winters evening.</p>
+                        <p>As the latest dining experience in Hawkes Bay, The Old Church Villa is the perfect place for a gathering of friends, family or business colleagues.</p>                        
+                        <blockquote>The beautifully restored historic Villa is steeping in history and full of character... A perfect place to spend a winters evening.</blockquote>
                         <p>Have a pre-dinner drink in front of the fire and then move into one of the 4 intimate dining spaces or down to the cellar to enjoy a wonderful menu and wine list designed to compliment the glamour of the Villa.</p>
-                        <img src="assets/img/food-long-plate@2x.jpg">
+                        <img src="assets/img/villa-dining@2x.jpg">
                         <p>Private villa rooms are available for groups of 6-12. The Cellar holds up to 15 and of course big sister "The Old Church" is right next door and will continue to host larger groups, functions and weddings.</p>
                         <p>Come and visit the new experience in town... we promise you won't be disappointed!</p>
                     </div>
                 </div>
 
                 <div class="tabs-pane" id="tab2">
-                    <h2>The Cellar</h2>
+                    <h1><span>The Cellar</span></h1>
                     <div class="content">
-                        <img src="assets/img/food-long-plate@2x.jpg">
+                        <img src="assets/img/cellar-rack@2x.jpg">
+                        <blockquote>Nowhere else will you find such a deliciously decadent gathering place for complete indulgence.</blockquote>
+                        <p>Hidden away under the villa is the intimate wine cellar. Perfect for a small dinner party of up to 15 people.</p>
                         <p>Hidden away under the villa is the intimate wine cellar. Perfect for a small dinner party of up to 15 people. Nowhere else will you find such a deliciously decadent gathering place for complete indulgence.</p>
-                        <p>Hidden away under the villa is the intimate wine cellar. Perfect for a small dinner party of up to 15 people. Nowhere else will you find such a deliciously decadent gathering place for complete indulgence.</p>
+
                     </div>
                 </div>
 
                 <div class="tabs-pane" id="tab3">
-                    <h2>The Old Church</h2>
+                    <h1><span>The Old Church</span></h1>
                     <div class="content">
                         <img src="assets/img/food-long-plate@2x.jpg">
-                        <p>The vision for The Old Church has been realised by creating an unsurpassed blend of history and style. Whether it is a wedding, a large function or a more relaxed dining experience. The Old Church can accommodate all. Enjoy lunch in the conservatory or dine out in the garden. Enjoy a platter and a selection of wines from our 100% Hawkes Bay wine list. Step it up for a special occasion and dine under the magnificent chandelier.</p>
+                        <p>The vision for The Old Church has been realised by creating an unsurpassed blend of history and style. Whether it is a wedding, a large function or a more relaxed dining experience. The Old Church can accommodate all. Enjoy lunch in the conservatory or dine out in the garden. Enjoy a platter and a selection of wines from our 100% Hawkes Bay wine list.</p>
+                        <blockquote>Step it up for a special occasion and dine under the magnificent chandelier.</blockquote>
                         <p>Set amongst the vines, with a stunning aspect to the Ruahines, Kawekes and the setting sun you can be certain that whatever way you choose to experience The Old Church it will result in fabulous food, wines, service and atmosphere. The unique experience of The Old Church will be a memory to enjoy for years to come.</p>
                         <img src="assets/img/food-long-plate@2x.jpg">
                         <p>The Church can cater for up to 140 people for a formal sit down meal. For groups of up to 45 the conservatory makes a special venue. Then there is the option of outdoor dining in our courtyard garden with its own outdoor bar.</p>
@@ -127,54 +146,58 @@
     <section class="menu">
         <div class="container">
             <ul class="tabs tabs-horizontal">
-                <a data-target="#tabA" href="#" class="active"><li>Canapes</li></a><!--
+                <a data-target="#tabA" href="#" class="active"><li>Canap&eacute;s</li></a><!--
                 --><a data-target="#tabB" href="#"><li>Dinner</li></a><!--
                 --><a data-target="#tabC" href="#"><li>Wines</li></a>
             </ul>
 
             <div class="tabs-content">
                 <div class="tabs-pane active" id="tabA">
-                    <h2>Canapes</h2>
+                    <h1>Canap&eacute;s</h1>
                     <div class="menu-divider"></div>
                     <h3 class="price">$4.50 per item</h3>
-                    <p>Tea smoked venison croute - chocolate &amp; nut dukkah</p>
-                    <p>Smoked eel on toast - crème fraiche &amp; chives</p>
-                    <p>Confit duck rillettes - red onion &amp; caramelised apple, Melba toasts</p>
-                    <p>Smoked mushroom &amp; parmesan arancini - roasted garlic aioli</p>
-                    <p>Beef tartar - harissa tapenade &amp; baby leaves</p>
-                    <p>Mini beef burger - cheese &amp; pickles</p>
-                    <p>Duck rolls - hoisin, spring onion &amp; cucumber - soy &amp; coriander dipping sauce</p>
-                    <p>Pork &amp; beans - salsa Verde</p>
-                    <p>Spicy pulled pork sliders - pickled cucumber</p>
-                    <p>Mini Caesar salad - crispy bacon &amp; parmesan</p>
-                    <p>House smoked salmon - potato &amp; herb blini, whipped chive crème fraiche</p>
-                    <p>Smoked bacon &amp; egg tart - parmesan crumbs</p>
+                    <div class="canapes">
+                        <p>Tea smoked venison croute <span>- chocolate &amp; nut dukkah</span></p>
+                        <p>Smoked eel on toast <span>- crème fraiche &amp; chives</span></p>
+                        <p>Confit duck rillettes <span>- red onion &amp; caramelised apple, Melba toasts</span></p>
+                        <p>Smoked mushroom &amp; parmesan arancini <span>- roasted garlic aioli</span></p>
+                        <p>Beef tartar <span>- harissa tapenade &amp; baby leaves</span></p>
+                        <p>Mini beef burger <span>- cheese &amp; pickles</span></p>
+                    </div>
+                    <div class="canapes">
+                        <p>Duck rolls - hoisin, spring onion &amp; cucumber <span>- soy &amp; coriander dipping sauce</span></p>
+                        <p>Pork &amp; beans <span>- salsa Verde</span></p>
+                        <p>Spicy pulled pork sliders <span>- pickled cucumber</span></p>
+                        <p>Mini Caesar salad <span>- crispy bacon &amp; parmesan</span></p>
+                        <p>House smoked salmon <span>- potato &amp; herb blini, whipped chive crème fraiche</span></p>
+                        <p>Smoked bacon &amp; egg tart <span>- parmesan crumbs</span></p>
+                    </div>
                 </div>
 
                 <div class="tabs-pane" id="tabB">
-                    <h2>Dinner</h2>
+                    <h1>Dinner</h1>
                     <div class="menu-divider"></div>
-                    <h3>Entree</h3>
-                    <p>Soup of the day, flatbread, please ask your waitperson <span> - $14 </span></p>
-                    <p>Ham hock terrine, potato &amp; dill salad, raspberry pickled onion, crisp breads <span> - $18 </span></p>
-                    <p>Venison ham, apple, blackberry &amp; gin relish, watercress &amp; toasted walnuts <span>- $18</span></p>
-                    <p>Seared Atlantic scallops, miso &amp; butternut, black pudding &amp; apple <span>- $20</span></p>
-                    <p>“Arataki” honey and soy marinated yellow fin tuna, pickled veggies &amp; wasabi <span>- $20</span></p>
-                    <h3>Mains</h3>
-                    <p>Rack of “Ovation” lamb, Pearl barley, capers, white anchovies, parsley, fennel &amp; salsa verde <span>- $34</span></p>
-                    <p>Eye fillet of beef &amp; braised rib wellington, broccoli cream, beets, crispy potatoes <span>- $35</span></p>
-                    <p>"Fish of the Day", squid &amp; potato risotto, braised greens, chicken &amp; squid broth <span>- $32</span></p>
-                    <p>Wild &amp; oyster mushroom gnocchi, thyme &amp; truffle butter, grana padano <span>- $28</span></p>
-                    <p>Pan roasted free range chicken, kale, baby onion, potato, thyme <span>- $30</span></p>
-                    <h3>Desserts</h3>
-                    <p>Rhubarb – ginger parkin, rhubarb ripple, rhubarb puree, rhubarb &amp; almond wafer <span>- $14</span></p>
-                    <p>Lemon posset – toasted coconut wafer, lemon curd, rosewater meringue, “Terazza” saffron syrup <span>- $14</span></p>
-                    <p>Chocolate nemesis – crème fraiche ice cream &amp; “Mountain View” strawberries - $14</p>
+                    <h3>Entre&eacute;</h3>
+                    <p>Soup of the day, flatbread, please ask your waitperson <span> $14 </span></p>
+                    <p>Ham hock terrine, potato &amp; dill salad, raspberry pickled onion, crisp breads <span> $18 </span></p>
+                    <p>Venison ham, apple, blackberry &amp; gin relish, watercress &amp; toasted walnuts <span> $18</span></p>
+                    <p>Seared Atlantic scallops, miso &amp; butternut, black pudding &amp; apple <span> $20</span></p>
+                    <p>“Arataki” honey and soy marinated yellow fin tuna, pickled veggies &amp; wasabi <span> $20</span></p>
+                    <h3>Main</h3>
+                    <p>Rack of “Ovation” lamb, Pearl barley, capers, white anchovies, parsley, fennel &amp; salsa verde <span> $34</span></p>
+                    <p>Eye fillet of beef &amp; braised rib wellington, broccoli cream, beets, crispy potatoes <span> $35</span></p>
+                    <p>"Fish of the Day", squid &amp; potato risotto, braised greens, chicken &amp; squid broth <span> $32</span></p>
+                    <p>Wild &amp; oyster mushroom gnocchi, thyme &amp; truffle butter, grana padano <span> $28</span></p>
+                    <p>Pan roasted free range chicken, kale, baby onion, potato, thyme <span> $30</span></p>
+                    <h3>Dessert</h3>
+                    <p>Rhubarb – ginger parkin, rhubarb ripple, rhubarb puree, rhubarb &amp; almond wafer <span> $14</span></p>
+                    <p>Lemon posset – toasted coconut wafer, lemon curd, rosewater meringue, “Terazza” saffron syrup <span> $14</span></p>
+                    <p>Chocolate nemesis – crème fraiche ice cream &amp; “Mountain View” strawberries <span> $14 </span></p>
                 </div>
 
                 <div class="tabs-pane" id="tabC">
                     <p><strong>Wines</strong></p>
-                    <p>Winter, summer, spring or fall?</p>
+                    <p>Full wine list, or just PDF to download?</p>
                 </div>
             </div>
         </div>
@@ -206,8 +229,8 @@
             </div>
             <div class="footer-links">
                 <h4>Contact:</h4>
-                <p><a href="tel:+6468448866">+64 6 844 8866</a></p>
-                <p><a href="mailto:info@theoldchurch.co.nz">info@theoldchurch.co.nz</a></p>
+                <a href="tel:+6468448866">+64 6 844 8866</a>
+                <a href="mailto:info@theoldchurch.co.nz">info@theoldchurch.co.nz</a>
             </div>
             <div class="footer-text">
                 <h4>Address:</h4>
@@ -220,6 +243,7 @@
     </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/fastclick.min.js"></script>
     <script src="assets/js/tabby.js"></script>
     <script src="assets/js/scripts.min.js"></script>

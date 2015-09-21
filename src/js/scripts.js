@@ -1,6 +1,18 @@
 $( document ).ready(function() {
 
     // ----
+    // Show Current Page in Nav
+    // ----
+
+    $(function(){
+      $('.nav ul li a').each(function() {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('current');
+        }
+      });
+    });
+
+    // ----
     // Mobile Nav
     // ----
 
@@ -57,36 +69,12 @@ $( document ).ready(function() {
     };
 
     // Id of the element which triggers ScrollToggle
-    var myScroller = new ScrollToggle($('#scrollToggle').position().top, function () {
+    var myScroller = new ScrollToggle($('.scrollToggle').position().top, function () {
         // Element to show
         $('.nav-fixed').css({'margin-top':'0'});
     }, function () {
         // Element to hide
         $('.nav-fixed').css({'margin-top':'-55px'});
-    });
-
-    // ----
-    // Froogaloop - Play Vimeo video on button click
-    // ----
-
-    var iframe = document.getElementById('video');
-
-    // $f == Froogaloop
-    var player = $f(iframe);
-
-    // bind events
-    var playButton = document.getElementById("play-button");
-    playButton.addEventListener("click", function() {
-      player.api("play");
-      $(this).hide();
-      $('#pause-button').show();
-    });
-
-    var pauseButton = document.getElementById("pause-button");
-    pauseButton.addEventListener("click", function() {
-      player.api("pause");
-      $(this).hide();
-      $('#play-button').show();
     });
 
     // ----
@@ -96,20 +84,6 @@ $( document ).ready(function() {
     $(function() {
         var attachFastClick = Origami.fastclick;
         attachFastClick(document.body);
-    });
-
-    // ----
-    // Fade in element on scroll
-    // ----
-
-    fadeIn = $(".fadein").fadeTo(0, 0);
-
-    $(window).scroll(function(d,h) {
-        fadeIn.each(function(i) {
-            a = $(this).offset().top + $(this).height();
-            b = $(window).scrollTop() + $(window).height();
-            if (a < b) $(this).addClass("animated fadeInDown");
-        });
     });
 
     // ----
@@ -137,4 +111,5 @@ $( document ).ready(function() {
             $('body').addClass('js'); // On page load, add the .js class to the <body> element.
         });
     })(jQuery);
+
 });

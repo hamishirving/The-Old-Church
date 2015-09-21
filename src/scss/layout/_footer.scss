@@ -1,5 +1,5 @@
 .footer {
-	background-color: #eff5ff;
+	background-color: #CAD7D8;
 	padding: 100px 0;
 	border-bottom: 4px solid $color-primary;
 
@@ -18,6 +18,10 @@
 		
 		@include media($tablet) {
 			display: none;
+		}
+
+		img {
+			width: 100%;
 		}
 	}
 
@@ -96,6 +100,7 @@
 			margin-top: -5px;
 			margin-bottom: 20px;	
 			float: left;
+			text-decoration: underline;
 		}
 	}
 

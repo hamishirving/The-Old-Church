@@ -1,32 +1,34 @@
 .header {
 	border-top: 4px solid $color-primary;
 	text-align: center;
-}
 
-.logo {
-	margin-top: 40px;
-	margin-bottom: 20px;
-
-	@include media($mobile) {
-		display: none;
-	}
-
-	img {
-		width: 220px;
-	}
-}
-
-.logo-small {
-	display: none;
-
-	@include media($mobile) {
-		display: block;
-		float: left;
-		margin-top: 20px;
+	.logo {
+		margin-top: 40px;
 		margin-bottom: 20px;
+
+		@include media($mobile) {
+			display: none;
+		}
+
+		img {
+			width: 220px;
+		}
 	}
 
-	img {
-		width: 220px;
+	.logo-small {
+		display: none;
+
+		@include media($mobile) {
+			display: block;
+			float: left;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		img {
+			width: 220px;
+		}
 	}
 }
+
+

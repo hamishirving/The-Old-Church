@@ -1,6 +1,10 @@
 .venues {
 	padding: 120px 0;
 
+	@include media($mobile) {
+		padding: 40px 0;
+	}
+
 	.tabs-stacked {
 		@include span-columns(4);
 		@include shift(1);
@@ -9,7 +13,7 @@
 		padding: 0;
 
 		@include media($tablet) {
-			@include span-columns(6);
+			@include span-columns(5);
 			@include shift(0);
 		}
 
@@ -19,7 +23,7 @@
 
 		li {
 			list-style-type: none;
-	    	padding: 20px;
+	    	padding: 20px 10px;
 			border: 2px solid #BEE1E6;
 			height: 60px;
 			width: 100%;
@@ -56,18 +60,43 @@
 		@include shift(1);
 
 		@include media($tablet) {
-			@include shift(0);
+			// @include shift(0);
 		}
 
 		@include media($mobile) {
 			@include span-columns(16);
+			@include shift(0);
 			padding-top: 20px;
-			text-align: center;
 		}
 
-		h2 {
+		h1 {
+			@include span-columns(14);
+			text-align: center;
 			margin-top: 0;
+			position: relative;
+			background: #fff;
+			z-index: 1;
 			margin-bottom: 15px;
+
+			&:before {
+			        border-top: 2px solid $color-secondary;
+			        content:"";
+			        margin: 0 auto; /* this centers the line to the full width specified */
+			        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+			        top: 50%; left: 0; right: 0; bottom: 0;
+			        width: 100%;
+			        z-index: -1;
+			    }
+
+		    span { 
+		        /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+		        background: #fff; 
+		        padding: 0 20px; 
+		    }
+		    
+		    @include media($tablet) {
+		    	@include span-columns(16);
+		    }
 		}
 
 		.content {
@@ -78,18 +107,15 @@
 			}
 
 			img {
-				@include span-columns(7);
-				margin-top: 10px;
-				margin-bottom: 5px;
-				margin-left: 20px;
-				float: right;
+				@include span-columns(16);
+				margin-bottom: 20px;
+				// float: right;
+			}
 
-				@include media($tablet) {
-					@include span-columns(16);
-					margin-left: 0;
-					margin-bottom: 15px;
-					margin-top: 0;
-				}
+			.img-right {
+				@include span-columns(8);
+				float: left;
+				margin-right: 15px;
 			}
 		}
 	}

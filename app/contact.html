@@ -64,8 +64,30 @@
         </ul>
     </nav>
 
-    <section class="placeholder">
+    <section class="slider">
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/church-ariel@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/outside-vines@2x.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/outside-lights@2x.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
+        </div>
+    </section>
 
+    <section class="google-map">
+        <div class="container">
+            <div id="map"></div>
+        </div>
     </section>
 
     <footer class="footer" role="contentinfo">
@@ -94,8 +116,8 @@
             </div>
             <div class="footer-links">
                 <h4>Contact:</h4>
-                <p><a href="tel:+6468448866">+64 6 844 8866</a></p>
-                <p><a href="mailto:info@theoldchurch.co.nz">info@theoldchurch.co.nz</a></p>
+                <a href="tel:+6468448866">+64 6 844 8866</a>
+                <a href="mailto:info@theoldchurch.co.nz">info@theoldchurch.co.nz</a>
             </div>
             <div class="footer-text">
                 <h4>Address:</h4>
@@ -108,7 +130,46 @@
     </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>
-    <script src="assets/js/scripts.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/fastclick.min.js"></script>
+    <script src="assets/js/tabby.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+
+    <script>
+        function initMap() {
+            var napier = {lat: -39.4960473, lng: 176.9188933};
+            var theoldchurch = {lat: -39.5411792, lng: 176.872817};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: theoldchurch,
+                scrollwheel: false,
+                zoom: 7
+            });
+
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+
+            // Set destination, origin and travel mode.
+            var request = {
+                destination: theoldchurch,
+                origin: napier,
+                travelMode: google.maps.TravelMode.DRIVING
+            };
+
+            // Pass the directions request to the directions service.
+            var directionsService = new google.maps.DirectionsService();
+                directionsService.route(request, function(response, status) {
+                    if (status == google.maps.DirectionsStatus.OK) {
+                    // Display the route on the map.
+                    directionsDisplay.setDirections(response);
+                }
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&v=3&callback=initMap"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

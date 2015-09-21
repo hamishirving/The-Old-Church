@@ -6,10 +6,12 @@
 
 	@include media($tablet) {
 		margin-top: -100px;
+		padding: 185px 5% 40px 5%;
 	}
 
 	@include media($mobile) {
 		margin-top: -60px;
+		padding: 185px 2.5% 40px 2.5%;
 	}
 
 	.quote {

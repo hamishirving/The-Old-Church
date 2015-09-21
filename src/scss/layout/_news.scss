@@ -38,6 +38,7 @@
 
 			.copy {
 				@include span-columns(8);
+				text-align: left;
 
 				@include media($tablet) {
 					@include span-columns(16);
@@ -53,28 +54,28 @@
 
 				}
 
-				.left,
-				,.middle {
-					@include span-columns(8);
-					text-align: justify;
-					padding-right: 3%;
+				// .left,
+				// ,.middle {
+				// 	@include span-columns(8);
+				// 	text-align: justify;
+				// 	padding-right: 3%;
 
-					@include media($mobile) {
-						@include span-columns(16);
-						padding-right: 0;
-					}
-				}
+				// 	@include media($mobile) {
+				// 		@include span-columns(16);
+				// 		padding-right: 0;
+				// 	}
+				// }
 
-				.middle {
-					@include media($mobile) {
-						margin-top: -15px;
-					}
-				}
+				// .middle {
+				// 	@include media($mobile) {
+				// 		margin-top: -15px;
+				// 	}
+				// }
 			}
 
 			.right {
 				@include span-columns(8);
-				margin-top: 10%;
+				// margin-top: 10%;
 
 				@include media($tablet) {
 					@include span-columns(16);

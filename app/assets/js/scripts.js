@@ -33,12 +33,24 @@ $( document ).ready(function() {
     // Swiper settings
     // ----
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper1 = new Swiper('.swiper-1', {
         effect: 'fade',
         loop: true,
         speed: 600,
         autoplay: 4000,
         grabCursor: true
+    });
+
+    var swiper2 = new Swiper('.swiper-2', {
+        loop: true,
+        speed: 600,
+        grabCursor: true,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 40
     });
 
     // ----

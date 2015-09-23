@@ -1,0 +1,49 @@
+.reviews {
+	padding-top: 120px;
+	padding-bottom: 80px;
+	background: #f2e9e2;
+	
+	.swiper-2 {
+		@include span-columns(12);
+		@include shift(2);
+
+		.swiper-slide {
+			padding-bottom: 60px;
+			width: 100%;
+		}
+
+		.swiper-pagination-bullet-active {
+			background: $color-primary;
+		}
+
+		h3 {
+			float: left;
+		}
+
+		.stars {
+			display: inline-block;
+			margin-top: 30px;
+			margin-left: 20px;
+			margin-bottom: 20px;
+
+			img{
+				height: 20px;
+			}
+		}
+
+		.date {
+			float: left;
+			margin-right: 30px;
+			font-style: italic;
+		}
+		
+		.origin {
+			display: inline-block;
+			margin-top: 2px;
+
+			a {
+				font-size: em(18);
+			}
+		}
+	}
+}

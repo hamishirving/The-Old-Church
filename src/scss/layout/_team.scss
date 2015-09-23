@@ -1,0 +1,35 @@
+.team {
+	padding: 120px 0;
+
+	.team-member {
+		@include span-columns(4);
+		padding: 0 2%;
+
+		@include media($tablet) {
+			@include span-columns(8);
+		}
+
+		@include media($mobile) {
+			@include span-columns(16);
+			padding: 0;
+		}
+		
+		&:first-child {
+			@include shift(2);
+
+			@include media($tablet) {
+				@include shift(0);
+			}
+		}
+
+		h2 {
+			font-size: em(30);
+		}
+
+		img {
+			width: 100%;
+			padding: 5%;
+			border: 2px solid $color-secondary;
+		}
+	}
+}

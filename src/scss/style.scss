@@ -4,6 +4,7 @@
 @import 'vendor/swiper';
 @import 'vendor/animate';
 @import 'vendor/tabby';
+@import 'vendor/photoswipe';
 
 // Bourbon
 @import 'bourbon/bourbon';
@@ -25,7 +26,6 @@
 @import 'components/links';
 @import 'components/forms';
 @import 'components/lists';
-@import 'components/misc';
 @import 'components/slider';
 @import 'components/hero';
 
@@ -40,6 +40,8 @@
 @import 'layout/venues';
 @import 'layout/awards';
 @import 'layout/map';
+@import 'layout/team';
+@import 'layout/reviews';
 
 // Pages
 @import 'pages/index';

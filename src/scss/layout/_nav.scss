@@ -60,6 +60,7 @@
 	    height: 12px;
 	    position: absolute;
 	    cursor: pointer;
+	    padding: 10px;
 
   		span,
   		&:before,
@@ -101,10 +102,9 @@
  	transition: all 500ms ease;
 
  	&.open {
- 		opacity: 1;
  		visibility: visible;
- 		background: $color-primary;
- 		opacity: .95;
+ 		background: rgba(178,0,0,0.95);
+ 		opacity: 1;
  	}
 
 	ul {

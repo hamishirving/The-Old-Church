@@ -1,0 +1,49 @@
+.booking {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	background: rgba(178,0,0,0.95);
+ 	transition: all 500ms ease;
+	visibility: hidden;
+	opacity: 0;
+
+	&.open {
+		visibility: visible;
+		opacity: 1;
+		background-color: rgba(178,0,0,0.95);
+	}
+
+	.booking-panel {
+		@include span-columns(8);
+		@include shift(2);
+		opacity: 1;
+		// height: 100%;
+		position: relative;
+		margin-top: 5%;
+		padding: 3%;
+		background: #fff;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 0 rgba(0,0,0,0.1);
+
+		@include media($mobile) {
+			@include span-columns(12);
+			@include shift(0);
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		.close {
+			display: block;
+			position: absolute;
+			padding: 10px;
+			right: 5%;
+			top: 5%;
+			cursor: pointer;
+		}
+	}
+}

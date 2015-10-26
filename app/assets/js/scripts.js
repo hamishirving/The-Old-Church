@@ -132,4 +132,13 @@ $( document ).ready(function() {
         });
     })(jQuery);
 
+    // ----
+    // Booking Overlay
+    // ----
+
+    $(".booking .close, .btn-book").click(function (e) {
+        $(".booking").toggleClass('open');
+        e.preventDefault();
+    });
+
 });

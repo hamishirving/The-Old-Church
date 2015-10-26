@@ -3,7 +3,7 @@
 	background: #f2e9e2;
 
 	.news-outline {
-		@include span-columns(16);
+		@include span-columns(12);
 		border: 2px solid $color-dark;
 		text-align: center;
 		padding-bottom: 5%;
@@ -37,15 +37,15 @@
 			}
 
 			.copy {
-				@include span-columns(8);
+				@include span-columns(6);
 				text-align: left;
 
 				@include media($tablet) {
-					@include span-columns(16);
+					@include span-columns(12);
 				}
 
 				.villa-logo {
-					@include span-columns(16);
+					@include span-columns(12);
 					text-align: center;
 
 					img {
@@ -74,11 +74,11 @@
 			}
 
 			.right {
-				@include span-columns(8);
+				@include span-columns(6);
 				// margin-top: 10%;
 
 				@include media($tablet) {
-					@include span-columns(16);
+					@include span-columns(12);
 					margin-top: 0;
 				}
 
@@ -92,7 +92,7 @@
 				}
 
 				.square {
-					@include span-columns(8);
+					@include span-columns(6);
 					max-height: 210px;
 
 					@include media($tablet) {

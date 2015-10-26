@@ -1,43 +1,25 @@
 .video-section {
 	padding: 120px 0;
+	background: #f0f0f0;
 
 	@include media($mobile) {
 		padding: 40px 0;
 	}
 
-	.play-video {
-		@include span-columns(10);
-		padding: 12.5%;
-		text-align: center;
-		color: $color-secondary;
-		border: 2px solid $color-secondary;
-		margin-top: 100px;
+	.video-copy {
+		@include span-columns(6);
+		margin-top: 10px;
 
 		@include media($tablet) {
-			padding: 10%;	
+			@include span-columns(12);
 		}
-
-		@include media($mobile) {
-			display: none;
-		}
-	}
-
-	#pause-button,
-	#play-button {
-		cursor: pointer;
-	}
-
-	#pause-button {
-		display: none;
 	}
 
 	.video-container {
-		@include span-columns(10);
-		@include shift(-4);
+		@include span-columns(6);
 
-		@include media($mobile) {
-			@include span-columns(16);
-			@include shift(0);
+		@include media($tablet) {
+			@include span-columns(12);
 		}
 
 		.video-frame {

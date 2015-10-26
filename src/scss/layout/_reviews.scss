@@ -4,8 +4,8 @@
 	background: #f2e9e2;
 	
 	.swiper-2 {
-		@include span-columns(12);
-		@include shift(2);
+		@include span-columns(6);
+		@include shift(3);
 
 		.swiper-slide {
 			padding-bottom: 60px;

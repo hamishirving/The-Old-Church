@@ -1,5 +1,5 @@
 .footer {
-	background-color: #CAD7D8;
+	background-color: #C2DBD7;
 	padding: 100px 0;
 	border-bottom: 4px solid $color-primary;
 
@@ -44,12 +44,12 @@
 		@include span-columns(4);
 
 		@include media($tablet) {
-			@include span-columns(12);
+			@include span-columns(8);
 			@include shift(2);
 		}
 
 		@include media($mobile) {
-			@include span-columns(16);
+			@include span-columns(12);
 			@include shift(0);
 		}
 
@@ -84,14 +84,14 @@
 	}
 
 	.footer-links {
-		@include span-columns(3);
+		@include span-columns(2);
 
 			@include media($tablet) {
-				@include span-columns(4);
+				@include span-columns(3);
 			}
 
 			@include media($mobile) {
-				@include span-columns(16);
+				@include span-columns(12);
 			}
 
 		a {
@@ -105,14 +105,14 @@
 	}
 
 	.footer-text {
-		@include span-columns(3);
+		@include span-columns(2);
 
 			@include media($tablet) {
-				@include span-columns(4);
+				@include span-columns(3);
 			}
 
 			@include media($mobile) {
-				@include span-columns(16);
+				@include span-columns(12);
 			}
 
 		p {

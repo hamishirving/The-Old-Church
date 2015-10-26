@@ -3,7 +3,8 @@
 	text-align: center;
 
 	.award-outline {
-		@include span-columns(16);
+		@include span-columns(10);
+		@include shift(1);
 		border: 2px solid $color-dark;
 
 		h2 {
@@ -34,7 +35,7 @@
 			}
 
 			.logo {
-				@include span-columns(16);
+				@include span-columns(12);
 
 				img {
 					max-height: 160px;
@@ -43,7 +44,7 @@
 			}
 
 			.award {
-				@include span-columns(8);
+				@include span-columns(6);
 				padding: 0 40px;
 
 				@include media($tablet) {
@@ -51,7 +52,7 @@
 				}
 
 				@include media($mobile) {
-					@include span-columns(16);
+					@include span-columns(12);
 				}
 
 				h2 {

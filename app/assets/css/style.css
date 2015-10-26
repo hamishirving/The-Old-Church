@@ -3739,6 +3739,12 @@ input {
   max-width: 100%;
   height: auto; }
 
+.eveve {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  margin-top: -20px; }
+
 .nav {
   text-align: center; }
   .nav ul {
@@ -3787,7 +3793,8 @@ input {
     right: 5%;
     height: 12px;
     position: absolute;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 10px; }
     .nav-mobile .menu-opener span, .nav-mobile .menu-opener:before, .nav-mobile .menu-opener:after {
       top: 5px;
       left: 0;
@@ -3819,10 +3826,9 @@ input {
   -webkit-transition: all 500ms ease;
           transition: all 500ms ease; }
   .mobile-nav-overlay.open {
-    opacity: 1;
     visibility: visible;
-    background: #b20000;
-    opacity: .95; }
+    background: rgba(178, 0, 0, 0.95);
+    opacity: 1; }
   .mobile-nav-overlay ul {
     list-style: none;
     padding: 0 5%;
@@ -3930,47 +3936,40 @@ input {
           margin-top: -40px; } }
 
 .video-section {
-  padding: 120px 0; }
+  padding: 120px 0;
+  background: #f0f0f0; }
   @media screen and (max-width: 480px)  {
     .video-section {
       padding: 40px 0; } }
-  .video-section .play-video {
+  .video-section .video-copy {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 61.8408%;
-    padding: 12.5%;
-    text-align: center;
-    color: #E2F0F2;
-    border: 2px solid #E2F0F2;
-    margin-top: 100px; }
-    .video-section .play-video:last-child {
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-top: 10px; }
+    .video-section .video-copy:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px)  {
-      .video-section .play-video {
-        padding: 10%; } }
-    @media screen and (max-width: 480px)  {
-      .video-section .play-video {
-        display: none; } }
-  .video-section #pause-button, .video-section #play-button {
-    cursor: pointer; }
-  .video-section #pause-button {
-    display: none; }
+      .video-section .video-copy {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .video-section .video-copy:last-child {
+          margin-right: 0; } }
   .video-section .video-container {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 61.8408%;
-    margin-left: -25.43947%; }
+    margin-right: 2.35765%;
+    width: 48.82117%; }
     .video-section .video-container:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 480px)  {
+    @media screen and (max-width: 768px)  {
       .video-section .video-container {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 100%;
-        margin-left: 0%; }
+        margin-right: 2.35765%;
+        width: 100%; }
         .video-section .video-container:last-child {
           margin-right: 0; } }
     .video-section .video-container .video-frame {
@@ -3993,7 +3992,7 @@ input {
   .news .news-outline {
     float: left;
     display: block;
-    margin-right: 1.75788%;
+    margin-right: 2.35765%;
     width: 100%;
     border: 2px solid #234047;
     text-align: center;
@@ -4023,8 +4022,8 @@ input {
       .news .news-outline .news-wrapper .copy {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 49.12106%;
+        margin-right: 2.35765%;
+        width: 48.82117%;
         text-align: left; }
         .news .news-outline .news-wrapper .copy:last-child {
           margin-right: 0; }
@@ -4032,14 +4031,14 @@ input {
           .news .news-outline .news-wrapper .copy {
             float: left;
             display: block;
-            margin-right: 1.75788%;
+            margin-right: 2.35765%;
             width: 100%; }
             .news .news-outline .news-wrapper .copy:last-child {
               margin-right: 0; } }
         .news .news-outline .news-wrapper .copy .villa-logo {
           float: left;
           display: block;
-          margin-right: 1.75788%;
+          margin-right: 2.35765%;
           width: 100%;
           text-align: center; }
           .news .news-outline .news-wrapper .copy .villa-logo:last-child {
@@ -4049,15 +4048,15 @@ input {
       .news .news-outline .news-wrapper .right {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 49.12106%; }
+        margin-right: 2.35765%;
+        width: 48.82117%; }
         .news .news-outline .news-wrapper .right:last-child {
           margin-right: 0; }
         @media screen and (max-width: 768px)  {
           .news .news-outline .news-wrapper .right {
             float: left;
             display: block;
-            margin-right: 1.75788%;
+            margin-right: 2.35765%;
             width: 100%;
             margin-top: 0; }
             .news .news-outline .news-wrapper .right:last-child {
@@ -4071,8 +4070,8 @@ input {
         .news .news-outline .news-wrapper .right .square {
           float: left;
           display: block;
-          margin-right: 1.75788%;
-          width: 49.12106%;
+          margin-right: 2.35765%;
+          width: 48.82117%;
           max-height: 210px; }
           .news .news-outline .news-wrapper .right .square:last-child {
             margin-right: 0; }
@@ -4084,7 +4083,7 @@ input {
           margin-bottom: 20px; } }
 
 .footer {
-  background-color: #CAD7D8;
+  background-color: #C2DBD7;
   padding: 100px 0;
   border-bottom: 4px solid #b20000; }
   @media screen and (max-width: 768px)  {
@@ -4115,24 +4114,24 @@ input {
   .footer .signup {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 23.68159%; }
+    margin-right: 2.35765%;
+    width: 31.76157%; }
     .footer .signup:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px)  {
       .footer .signup {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 74.56053%;
-        margin-left: 12.71973%; }
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-left: 17.05961%; }
         .footer .signup:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 480px)  {
       .footer .signup {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%;
         margin-left: 0%; }
         .footer .signup:last-child {
@@ -4159,23 +4158,23 @@ input {
   .footer .footer-links {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 17.32172%; }
+    margin-right: 2.35765%;
+    width: 14.70196%; }
     .footer .footer-links:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px)  {
       .footer .footer-links {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 23.68159%; }
+        margin-right: 2.35765%;
+        width: 23.23176%; }
         .footer .footer-links:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 480px)  {
       .footer .footer-links {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%; }
         .footer .footer-links:last-child {
           margin-right: 0; } }
@@ -4189,23 +4188,23 @@ input {
   .footer .footer-text {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 17.32172%; }
+    margin-right: 2.35765%;
+    width: 14.70196%; }
     .footer .footer-text:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px)  {
       .footer .footer-text {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 23.68159%; }
+        margin-right: 2.35765%;
+        width: 23.23176%; }
         .footer .footer-text:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 480px)  {
       .footer .footer-text {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%; }
         .footer .footer-text:last-child {
           margin-right: 0; } }
@@ -4233,8 +4232,8 @@ input {
     .menu ul a {
       float: left;
       display: block;
-      margin-right: 1.75788%;
-      width: 23.68159%;
+      margin-right: 2.35765%;
+      width: 23.23176%;
       padding: 18px 0;
       -webkit-transition: all 300ms ease;
               transition: all 300ms ease;
@@ -4247,7 +4246,7 @@ input {
         .menu ul a {
           float: left;
           display: block;
-          margin-right: 1.75788%;
+          margin-right: 2.35765%;
           width: 100%;
           margin-bottom: 10px; }
           .menu ul a:last-child {
@@ -4260,9 +4259,9 @@ input {
   .menu .tabs-content {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 74.56053%;
-    margin-left: 12.71973%;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
     padding-top: 20px; }
     .menu .tabs-content:last-child {
       margin-right: 0; }
@@ -4270,7 +4269,7 @@ input {
       .menu .tabs-content {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%;
         margin-left: 0%; }
         .menu .tabs-content:last-child {
@@ -4279,7 +4278,7 @@ input {
       .menu .tabs-content {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%;
         margin-left: 0%; }
         .menu .tabs-content:last-child {
@@ -4296,8 +4295,8 @@ input {
       .menu .tabs-content .tabs-pane .canapes {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 49.12106%;
+        margin-right: 2.35765%;
+        width: 48.82117%;
         padding-right: 3%; }
         .menu .tabs-content .tabs-pane .canapes:last-child {
           margin-right: 0; }
@@ -4308,8 +4307,8 @@ input {
           .menu .tabs-content .tabs-pane .canapes {
             float: left;
             display: block;
-            margin-right: 1.75788%;
-            width: 49.12106%;
+            margin-right: 2.35765%;
+            width: 48.82117%;
             margin-left: 0%; }
             .menu .tabs-content .tabs-pane .canapes:last-child {
               margin-right: 0; } }
@@ -4317,7 +4316,7 @@ input {
           .menu .tabs-content .tabs-pane .canapes {
             float: left;
             display: block;
-            margin-right: 1.75788%;
+            margin-right: 2.35765%;
             width: 100%;
             margin-left: 0%; }
             .menu .tabs-content .tabs-pane .canapes:last-child {
@@ -4342,9 +4341,9 @@ input {
   .venues .tabs-stacked {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 23.68159%;
-    margin-left: 6.35987%;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-left: 8.5298%;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0; }
@@ -4354,8 +4353,8 @@ input {
       .venues .tabs-stacked {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 30.04146%;
+        margin-right: 2.35765%;
+        width: 31.76157%;
         margin-left: 0%; }
         .venues .tabs-stacked:last-child {
           margin-right: 0; } }
@@ -4363,7 +4362,7 @@ input {
       .venues .tabs-stacked {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%; }
         .venues .tabs-stacked:last-child {
           margin-right: 0; } }
@@ -4394,16 +4393,16 @@ input {
   .venues .tabs-content {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 61.8408%;
-    margin-left: 6.35987%; }
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 8.5298%; }
     .venues .tabs-content:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px)  {
       .venues .tabs-content {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%;
         margin-left: 0%;
         padding-top: 20px; }
@@ -4412,8 +4411,8 @@ input {
     .venues .tabs-content h1 {
       float: left;
       display: block;
-      margin-right: 1.75788%;
-      width: 87.28027%;
+      margin-right: 2.35765%;
+      width: 100%;
       margin-top: 0;
       position: relative;
       background: #fff;
@@ -4442,29 +4441,29 @@ input {
         .venues .tabs-content h1 {
           float: left;
           display: block;
-          margin-right: 1.75788%;
+          margin-right: 2.35765%;
           width: 100%; }
           .venues .tabs-content h1:last-child {
             margin-right: 0; } }
     .venues .tabs-content .content {
       float: left;
       display: block;
-      margin-right: 1.75788%;
-      width: 87.28027%; }
+      margin-right: 2.35765%;
+      width: 100%; }
       .venues .tabs-content .content:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px)  {
         .venues .tabs-content .content {
           float: left;
           display: block;
-          margin-right: 1.75788%;
+          margin-right: 2.35765%;
           width: 100%; }
           .venues .tabs-content .content:last-child {
             margin-right: 0; } }
       .venues .tabs-content .content img {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%;
         margin-bottom: 5%;
         margin-top: 2%; }
@@ -4473,8 +4472,8 @@ input {
       .venues .tabs-content .content .img-right {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 49.12106%;
+        margin-right: 2.35765%;
+        width: 48.82117%;
         float: left;
         margin-right: 15px; }
         .venues .tabs-content .content .img-right:last-child {
@@ -4486,8 +4485,9 @@ input {
   .awards .award-outline {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 100%;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
     border: 2px solid #234047; }
     .awards .award-outline:last-child {
       margin-right: 0; }
@@ -4518,7 +4518,7 @@ input {
       .awards .award-outline .awards-wrapper .logo {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%; }
         .awards .award-outline .awards-wrapper .logo:last-child {
           margin-right: 0; }
@@ -4528,8 +4528,8 @@ input {
       .awards .award-outline .awards-wrapper .award {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 49.12106%;
+        margin-right: 2.35765%;
+        width: 48.82117%;
         padding: 0 40px; }
         .awards .award-outline .awards-wrapper .award:last-child {
           margin-right: 0; }
@@ -4540,7 +4540,7 @@ input {
           .awards .award-outline .awards-wrapper .award {
             float: left;
             display: block;
-            margin-right: 1.75788%;
+            margin-right: 2.35765%;
             width: 100%; }
             .awards .award-outline .awards-wrapper .award:last-child {
               margin-right: 0; } }
@@ -4561,8 +4561,8 @@ input {
   .team .team-member {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 23.68159%;
+    margin-right: 2.35765%;
+    width: 31.76157%;
     padding: 0 2%; }
     .team .team-member:last-child {
       margin-right: 0; }
@@ -4570,24 +4570,20 @@ input {
       .team .team-member {
         float: left;
         display: block;
-        margin-right: 1.75788%;
-        width: 49.12106%; }
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-right: 0; }
         .team .team-member:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 480px)  {
       .team .team-member {
         float: left;
         display: block;
-        margin-right: 1.75788%;
+        margin-right: 2.35765%;
         width: 100%;
         padding: 0; }
         .team .team-member:last-child {
           margin-right: 0; } }
-    .team .team-member:first-child {
-      margin-left: 12.71973%; }
-      @media screen and (max-width: 768px)  {
-        .team .team-member:first-child {
-          margin-left: 0%; } }
     .team .team-member h2 {
       font-size: 1.875em; }
     .team .team-member img {
@@ -4602,9 +4598,9 @@ input {
   .reviews .swiper-2 {
     float: left;
     display: block;
-    margin-right: 1.75788%;
-    width: 74.56053%;
-    margin-left: 12.71973%; }
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 25.58941%; }
     .reviews .swiper-2:last-child {
       margin-right: 0; }
     .reviews .swiper-2 .swiper-slide {
@@ -4630,3 +4626,90 @@ input {
       margin-top: 2px; }
       .reviews .swiper-2 .origin a {
         font-size: 1.125em; }
+
+.weekdays {
+  padding: 120px 0 60px 0; }
+  .weekdays .weekday {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-bottom: 60px; }
+    .weekdays .weekday:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px)  {
+      .weekdays .weekday {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .weekdays .weekday:last-child {
+          margin-right: 0; }
+        .weekdays .weekday:nth-child(2n) {
+          margin-right: 0; }
+        .weekdays .weekday:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (max-width: 480px)  {
+      .weekdays .weekday {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .weekdays .weekday:last-child {
+          margin-right: 0; } }
+    .weekdays .weekday img {
+      width: 100%;
+      padding: 5%;
+      border: 2px solid #E2F0F2; }
+    .weekdays .weekday button {
+      margin-top: 15px; }
+
+.booking {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background: rgba(178, 0, 0, 0.95);
+  -webkit-transition: all 500ms ease;
+          transition: all 500ms ease;
+  visibility: hidden;
+  opacity: 0; }
+  .booking.open {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(178, 0, 0, 0.95); }
+  .booking .booking-panel {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    opacity: 1;
+    position: relative;
+    margin-top: 5%;
+    padding: 3%;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1); }
+    .booking .booking-panel:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px)  {
+      .booking .booking-panel {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%; }
+        .booking .booking-panel:last-child {
+          margin-right: 0; } }
+    .booking .booking-panel h3 {
+      text-align: center; }
+    .booking .booking-panel .close {
+      display: block;
+      position: absolute;
+      padding: 10px;
+      right: 5%;
+      top: 5%;
+      cursor: pointer; }

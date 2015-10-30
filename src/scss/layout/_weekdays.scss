@@ -1,6 +1,10 @@
 .weekdays {
 	padding: 120px 0 60px 0;
 
+	@include media($mobile) {
+		padding: 60px 0;
+	}
+
 	.weekday {
 		@include span-columns(4);
 		margin-bottom: 60px;
@@ -20,8 +24,16 @@
 			border: 2px solid $color-secondary;
 		}
 
-		button {
-			margin-top: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.weekday-content {
+			padding: 0 5%;
+
+			button {
+				margin-top: 15px;
+			}
 		}
 	}
 }

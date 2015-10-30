@@ -86,7 +86,7 @@ $( document ).ready(function() {
         $('.nav-fixed').css({'margin-top':'0'});
     }, function () {
         // Element to hide
-        $('.nav-fixed').css({'margin-top':'-55px'});
+        $('.nav-fixed').css({'margin-top':'-58px'});
     });
 
     // ----

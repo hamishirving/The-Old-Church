@@ -1,5 +1,5 @@
 .footer {
-	background-color: #C2DBD7;
+	background-color: #E8D5CD;
 	padding: 100px 0;
 	border-bottom: 4px solid $color-primary;
 
@@ -41,7 +41,7 @@
 	}
 
 	.signup {
-		@include span-columns(4);
+		@include span-columns(3);
 
 		@include media($tablet) {
 			@include span-columns(8);
@@ -84,13 +84,15 @@
 	}
 
 	.footer-links {
-		@include span-columns(2);
+		@include span-columns(3);
+		padding-left: 5%;
 
 			@include media($tablet) {
-				@include span-columns(3);
+				@include span-columns(4);
 			}
 
 			@include media($mobile) {
+				padding-left: 0;
 				@include span-columns(12);
 			}
 
@@ -105,13 +107,15 @@
 	}
 
 	.footer-text {
-		@include span-columns(2);
+		@include span-columns(3);
+		padding-left: 5%;
 
 			@include media($tablet) {
-				@include span-columns(3);
+				@include span-columns(4);
 			}
 
 			@include media($mobile) {
+				padding-left: 0;
 				@include span-columns(12);
 			}
 

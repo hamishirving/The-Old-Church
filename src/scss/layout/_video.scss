@@ -1,6 +1,6 @@
 .video-section {
 	padding: 120px 0;
-	background: #f0f0f0;
+	background: #f2e9e2;
 
 	@include media($mobile) {
 		padding: 40px 0;
@@ -13,10 +13,16 @@
 		@include media($tablet) {
 			@include span-columns(12);
 		}
+
+		a {
+			font-size: 1em;
+			
+		}
 	}
 
 	.video-container {
 		@include span-columns(6);
+		margin-top: 30px;
 
 		@include media($tablet) {
 			@include span-columns(12);

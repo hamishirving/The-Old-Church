@@ -4258,38 +4258,44 @@ input {
       .menu .tabs-content .tabs-pane h3 {
         text-transform: uppercase;
         margin-top: 40px; }
-        .menu .tabs-content .tabs-pane h3.price {
+        .menu .tabs-content .tabs-pane h3.menu-heading {
           font-style: italic;
-          text-transform: lowercase; }
-      .menu .tabs-content .tabs-pane .canapes {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        padding-right: 3%; }
-        .menu .tabs-content .tabs-pane .canapes:last-child {
-          margin-right: 0; }
-        .menu .tabs-content .tabs-pane .canapes span {
-          font-style: italic;
-          float: none; }
-        @media screen and (max-width: 768px)  {
-          .menu .tabs-content .tabs-pane .canapes {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 48.82117%;
-            margin-left: 0%; }
-            .menu .tabs-content .tabs-pane .canapes:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px)  {
-          .menu .tabs-content .tabs-pane .canapes {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 100%;
-            margin-left: 0%; }
-            .menu .tabs-content .tabs-pane .canapes:last-child {
-              margin-right: 0; } }
+          text-transform: capitalize; }
+      .menu .tabs-content .tabs-pane .menu-section {
+        display: block; }
+        .menu .tabs-content .tabs-pane .menu-section::after {
+          clear: both;
+          content: "";
+          display: table; }
+        .menu .tabs-content .tabs-pane .menu-section .menu-col {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%;
+          padding-right: 3%; }
+          .menu .tabs-content .tabs-pane .menu-section .menu-col:last-child {
+            margin-right: 0; }
+          .menu .tabs-content .tabs-pane .menu-section .menu-col span {
+            font-style: italic;
+            float: none; }
+          @media screen and (max-width: 768px)  {
+            .menu .tabs-content .tabs-pane .menu-section .menu-col {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 48.82117%;
+              margin-left: 0%; }
+              .menu .tabs-content .tabs-pane .menu-section .menu-col:last-child {
+                margin-right: 0; } }
+          @media screen and (max-width: 480px)  {
+            .menu .tabs-content .tabs-pane .menu-section .menu-col {
+              float: left;
+              display: block;
+              margin-right: 2.35765%;
+              width: 100%;
+              margin-left: 0%; }
+              .menu .tabs-content .tabs-pane .menu-section .menu-col:last-child {
+                margin-right: 0; } }
       .menu .tabs-content .tabs-pane p {
         text-align: left; }
         .menu .tabs-content .tabs-pane p span {

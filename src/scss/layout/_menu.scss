@@ -63,29 +63,33 @@
 				text-transform: uppercase;
 				margin-top: 40px;
 
-				&.price {
+				&.menu-heading {
 					font-style: italic;
-					text-transform: lowercase;
+					text-transform: capitalize;
 				}
 			}
 
-			.canapes {
-				@include span-columns(6);
-				padding-right: 3%;
+			.menu-section {
+				@include row;
 
-				span {
-					font-style: italic;
-					float: none;
-				}
-
-				@include media($tablet) {
+				.menu-col {
 					@include span-columns(6);
-					@include shift(0);
-				}
+					padding-right: 3%;
 
-				@include media($mobile) {
-					@include span-columns(12);
-					@include shift(0);
+					span {
+						font-style: italic;
+						float: none;
+					}
+
+					@include media($tablet) {
+						@include span-columns(6);
+						@include shift(0);
+					}
+
+					@include media($mobile) {
+						@include span-columns(12);
+						@include shift(0);
+					}
 				}
 			}
 

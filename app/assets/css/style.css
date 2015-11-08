@@ -3556,6 +3556,9 @@ html {
 html, body {
   height: 100%; }
 
+.wf-loading {
+  visibility: hidden; }
+
 .container {
   max-width: 68em;
   margin-left: auto;
@@ -4324,6 +4327,14 @@ input {
         margin: 30px auto 0;
         border-bottom: 2px dotted; }
 
+.menu.functions ul li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .menu.functions ul li:last-child {
+    margin-right: 0; }
+
 .venues {
   padding: 120px 0; }
   @media screen and (max-width: 480px)  {
@@ -4737,7 +4748,8 @@ input {
   -webkit-transition: all 500ms ease;
           transition: all 500ms ease;
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+  overflow: scroll; }
   .booking.open {
     visibility: visible;
     opacity: 1;

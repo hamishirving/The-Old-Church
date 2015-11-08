@@ -8,6 +8,11 @@ html, body {
   height: 100%;
 }
 
+// Hide Typekit fonts until fully loaded
+.wf-loading { 
+  visibility: hidden; 
+}
+
 .container {
 	@include outer-container;
   height: 100%;

@@ -9,6 +9,7 @@
  	transition: all 500ms ease;
 	visibility: hidden;
 	opacity: 0;
+	overflow: scroll;
 
 	&.open {
 		visibility: visible;

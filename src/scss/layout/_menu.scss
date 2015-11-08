@@ -118,3 +118,17 @@
 		}
 	}
 }
+
+// Functions page - menu section - specific styles
+.menu.functions {
+
+	ul {
+		li {
+			@include span-columns(4);
+
+			&:first-child {
+				// @include shift(1);			
+			}
+		}
+	}
+}

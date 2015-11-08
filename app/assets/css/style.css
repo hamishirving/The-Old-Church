@@ -3748,35 +3748,14 @@ input {
   min-height: 360px;
   margin-top: -20px; }
 
-/*
- * CSS Animations
- * Don't forget to add vendor prefixes!
- */
-.m-scene .scene_element {
-  -webkit-animation-duration: 0.25s;
-          animation-duration: 0.25s;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
-
-.m-scene .scene_element--fadein {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn; }
-
-.m-scene.is-exiting .scene_element {
-  -webkit-animation-direction: alternate-reverse;
-          animation-direction: alternate-reverse; }
-
-/*
- * Keyframes
- */
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  z-index: 100; }
 
 .nav {
   text-align: center; }
@@ -4220,6 +4199,7 @@ input {
     .menu {
       padding: 40px 0; } }
   .menu ul {
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -4227,34 +4207,40 @@ input {
     font-size: 1em;
     line-height: 1.25em;
     font-weight: 700;
-    text-transform: uppercase; }
-    .menu ul a {
+    text-transform: uppercase;
+    text-align: center; }
+    .menu ul::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .menu ul li {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%;
-      padding: 18px 0;
-      -webkit-transition: all 300ms ease;
-              transition: all 300ms ease;
-      display: inline-block;
-      float: none;
-      border: 2px solid #d1b7a3; }
-      .menu ul a:last-child {
+      width: 23.23176%; }
+      .menu ul li:last-child {
         margin-right: 0; }
       @media screen and (max-width: 480px)  {
-        .menu ul a {
+        .menu ul li {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 100%;
           margin-bottom: 10px; }
-          .menu ul a:last-child {
+          .menu ul li:last-child {
             margin-right: 0; } }
-      .menu ul a:hover {
-        background: #e9dbd0;
-        color: #234047; }
-      .menu ul a.active {
-        background: #e9dbd0; }
+      .menu ul li a {
+        display: inline-block;
+        width: 100%;
+        padding: 18px 0;
+        -webkit-transition: all 300ms ease;
+                transition: all 300ms ease;
+        border: 2px solid #d1b7a3; }
+        .menu ul li a:hover {
+          background: #e9dbd0;
+          color: #234047; }
+        .menu ul li a.active {
+          background: #e9dbd0; }
   .menu .tabs-content {
     float: left;
     display: block;
@@ -4634,7 +4620,14 @@ input {
         width: 100%;
         padding: 0; }
         .team .team-member:last-child {
-          margin-right: 0; } }
+          margin-right: 0; }
+        .team .team-member:first-child {
+          margin-bottom: 40px; } }
+    .team .team-member:first-child {
+      margin-left: 17.05961%; }
+      @media screen and (max-width: 768px)  {
+        .team .team-member:first-child {
+          margin-left: 0%; } }
     .team .team-member h2 {
       font-size: 1.875em; }
     .team .team-member img {
@@ -4656,6 +4649,15 @@ input {
     margin-left: 25.58941%; }
     .reviews .swiper-2:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px)  {
+      .reviews .swiper-2 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%; }
+        .reviews .swiper-2:last-child {
+          margin-right: 0; } }
     .reviews .swiper-2 .swiper-slide {
       padding-bottom: 60px;
       width: 100%; }

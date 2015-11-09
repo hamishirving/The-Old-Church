@@ -1,8 +1,9 @@
 .google-map {
-	padding-top: 240px;
-	padding-bottom: 120px;
-	margin-top: -120px;
-	// background: $color-secondary;
+	padding: 120px 0;
+
+	@include media($mobile) {
+		padding: 60px 0;
+	}
 
 
 	#map {

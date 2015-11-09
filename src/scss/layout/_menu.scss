@@ -24,7 +24,6 @@
 
 			@include media($mobile) {
 				@include span-columns(12);
-				margin-bottom: 10px;
 			}
 
 			a {
@@ -34,6 +33,10 @@
 				transition: all 300ms ease;
 				border: 2px solid #d1b7a3;
 				text-decoration: none;
+
+				@include media($mobile) {
+					margin-bottom: 10px;
+				}
 
 				&:hover {
 					background: #e9dbd0;
@@ -126,8 +129,8 @@
 		li {
 			@include span-columns(4);
 
-			&:first-child {
-				// @include shift(1);			
+			@include media($mobile) {
+				@include span-columns(12);
 			}
 		}
 	}

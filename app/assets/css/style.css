@@ -4048,6 +4048,8 @@ input {
           margin-right: 0; }
         .news .news-outline .news-wrapper .copy h2 {
           margin: 0; }
+          .news .news-outline .news-wrapper .copy h2.strike {
+            text-decoration: line-through; }
         @media screen and (max-width: 768px)  {
           .news .news-outline .news-wrapper .copy {
             float: left;
@@ -4227,8 +4229,7 @@ input {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 100%;
-          margin-bottom: 10px; }
+          width: 100%; }
           .menu ul li:last-child {
             margin-right: 0; } }
       .menu ul li a {
@@ -4239,6 +4240,9 @@ input {
                 transition: all 300ms ease;
         border: 2px solid #d1b7a3;
         text-decoration: none; }
+        @media screen and (max-width: 480px)  {
+          .menu ul li a {
+            margin-bottom: 10px; } }
         .menu ul li a:hover {
           background: #e9dbd0;
           color: #234047; }
@@ -4334,6 +4338,14 @@ input {
   width: 31.76157%; }
   .menu.functions ul li:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px)  {
+    .menu.functions ul li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .menu.functions ul li:last-child {
+        margin-right: 0; } }
 
 .venues {
   padding: 120px 0; }
@@ -4741,8 +4753,8 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  right: 0;
+  bottom: 0;
   z-index: 100;
   background: rgba(178, 0, 0, 0.95);
   -webkit-transition: all 500ms ease;

@@ -46,6 +46,10 @@
 
 						h2 {
 							margin: 0;
+
+							&.strike {
+								text-decoration: line-through;
+							}
 						}
 
 				@include media($tablet) {

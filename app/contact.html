@@ -19,7 +19,7 @@
 
     <body>
 
-        <!-- <div class="loading"></div> -->
+        <div class="loading"></div>
 
         <header class="header" role="banner">
             <div class="container">
@@ -79,13 +79,22 @@
                 <div class="swiper-container swiper-1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/img/outside-night@2x.jpg">
+                            <img srcset="assets/img/outside-night@2x.jpg 1088w,
+                                        assets/img/outside-night-m.jpg 768w,
+                                        assets/img/outside-night.jpg 480w"
+                                src="assets/img/outside-night.jpg">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/outside-vines@2x.jpg">
+                            <img srcset="assets/img/entrance@2x.jpg 1088w,
+                                        assets/img/entrance-m.jpg 768w,
+                                        assets/img/entrance.jpg 480w"
+                                src="assets/img/entrance.jpg">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/outside-lights@2x.jpg">
+                            <img srcset="assets/img/sky@2x.jpg 1088w,
+                                        assets/img/sky-m.jpg 768w,
+                                        assets/img/sky.jpg 480w"
+                                src="assets/img/sky.jpg">
                         </div>
                     </div>
                 </div>
@@ -93,7 +102,7 @@
             </div>
         </section>
 
-        <section class="google-map">
+        <section class="google-map scrollToggle">
             <div class="container">
                 <div class="contact-details">
                     <h2>Contact</h2>
@@ -155,7 +164,6 @@
         <script src="assets/components/jquery/jquery.min.js"></script>
         <script src="assets/js/swiper.min.js"></script>
         <script src="assets/js/fastclick.min.js"></script>
-        <script src="assets/js/tabby.js"></script>
         <script src="assets/js/scripts.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -28,7 +28,7 @@
 			height: 60px;
 			width: 100%;
 			display: inline-block;
-			font-size: em(16);
+			font-size: em(14);
 			line-height: em(20);
 			font-weight: 700;
 			text-transform: uppercase;
@@ -61,7 +61,8 @@
 		@include shift(1);
 
 		@include media($tablet) {
-			// @include shift(0);
+			@include span-columns(7);
+			@include shift(1);
 		}
 
 		@include media($mobile) {

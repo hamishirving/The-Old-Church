@@ -6,7 +6,7 @@
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
         <link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="//ajax.googleapis.com" rel="dns-prefetch">
@@ -78,16 +78,28 @@
                 <div class="swiper-container swiper-1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/img/fig-salad@2x.jpg">
+                            <img srcset="assets/img/fig-salad@2x.jpg 1088w,
+                                        assets/img/fig-salad-m.jpg 768w,
+                                        assets/img/fig-salad.jpg 480w"
+                                src="assets/img/fig-salad.jpg">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/conservatory-summer@2x.jpg">
+                            <img srcset="assets/img/conservatory-summer@2x.jpg 1088w,
+                                        assets/img/conservatory-summer-m.jpg 768w,
+                                        assets/img/conservatory-summer.jpg 480w"
+                                src="assets/img/conservatory-summer.jpg">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/hero-table@2x.jpg">
+                            <img srcset="assets/img/hero-table@2x.jpg 1088w,
+                                        assets/img/hero-table-m.jpg 768w,
+                                        assets/img/hero-table.jpg 480w"
+                                src="assets/img/hero-table.jpg">
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/img/chandellier@2x.jpg">
+                            <img srcset="assets/img/chandellier@2x.jpg 1088w,
+                                        assets/img/chandellier-m.jpg 768w,
+                                        assets/img/chandellier.jpg 480w"
+                                src="assets/img/chandellier.jpg">
                         </div>
                     </div>
                 </div>
@@ -175,7 +187,7 @@
             </div>
         </section>
 
-<footer class="footer" role="contentinfo">
+        <footer class="footer" role="contentinfo">
             <div class="container">
                 <div class="logo">
                     <a href="/"><img src="assets/img/logo@2x.png" alt="Logo"></a>
@@ -218,14 +230,13 @@
                 <div class="booking-panel">
                     <h3>Make a booking</h3>
                     <a class="close">Close</a>
-                    <iframe class="eveve" id="eveve" src="https://nz3.eveve.com/tms/DateCovers.php?Est=oldchurch" frameborder="0" scrolling="no" width="100%">Please upgrade your browser</iframe>
+                    <iframe class="eveve" id="eveve" src="https://nz3.eveve.com/tms/DateCovers.php?Est=oldchurch" frameborder="0" width="100%">Please upgrade your browser</iframe>
                 </div>
             </div>
         </section>
 
         <script src="assets/components/jquery/jquery.min.js"></script>
         <script src="assets/js/swiper.min.js"></script>
-        <script src="assets/js/froogaloop.min.js"></script>
         <script src="assets/js/fastclick.min.js"></script>
         <script src="assets/js/scripts.min.js"></script>
 

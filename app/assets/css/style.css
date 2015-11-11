@@ -327,7 +327,7 @@ td, th {
   padding: 0; }
 
 /**
- * Swiper 3.1.2
+ * Swiper 3.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
@@ -338,7 +338,7 @@ td, th {
  * 
  * Licensed under MIT
  * 
- * Released on: August 22, 2015
+ * Released on: November 7, 2015
  */
 .swiper-container {
   margin: 0 auto;
@@ -3609,7 +3609,7 @@ h1 {
       font-size: 1.875em; } }
   @media screen and (max-width: 480px)  {
     h1 {
-      font-size: 1.5em; } }
+      font-size: 1.375em; } }
 
 h2 {
   font-size: 2.25em;
@@ -3746,8 +3746,7 @@ input {
 
 .eveve {
   width: 100%;
-  height: 100%;
-  min-height: 360px;
+  height: calc(100% + 1px);
   margin-top: -20px; }
 
 .loading {
@@ -4239,7 +4238,8 @@ input {
         -webkit-transition: all 300ms ease;
                 transition: all 300ms ease;
         border: 2px solid #d1b7a3;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: 0.875em; }
         @media screen and (max-width: 480px)  {
           .menu ul li a {
             margin-bottom: 10px; } }
@@ -4387,7 +4387,7 @@ input {
       height: 60px;
       width: 100%;
       display: inline-block;
-      font-size: 1em;
+      font-size: 0.875em;
       line-height: 1.25em;
       font-weight: 700;
       text-transform: uppercase;
@@ -4413,6 +4413,15 @@ input {
     margin-left: 8.5298%; }
     .venues .tabs-content:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px)  {
+      .venues .tabs-content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 57.35098%;
+        margin-left: 8.5298%; }
+        .venues .tabs-content:last-child {
+          margin-right: 0; } }
     @media screen and (max-width: 480px)  {
       .venues .tabs-content {
         float: left;
@@ -4783,8 +4792,11 @@ input {
     width: 65.88078%;
     margin-left: 17.05961%;
     opacity: 1;
+    height: 90%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     position: relative;
-    margin-top: 5%;
+    top: 5%;
     padding: 3%;
     background: #fff;
     border-radius: 3px;

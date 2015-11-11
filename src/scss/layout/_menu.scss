@@ -33,6 +33,7 @@
 				transition: all 300ms ease;
 				border: 2px solid #d1b7a3;
 				text-decoration: none;
+				font-size: em(14);
 
 				@include media($mobile) {
 					margin-bottom: 10px;

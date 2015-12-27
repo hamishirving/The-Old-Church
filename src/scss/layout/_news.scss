@@ -42,6 +42,8 @@
 
 			.copy {
 				@include span-columns(6);
+				@include omega;
+				padding-right: 5%;
 				text-align: left;
 
 						h2 {
@@ -55,6 +57,28 @@
 				@include media($tablet) {
 					@include span-columns(12);
 					margin-bottom: 40px;
+				}
+			}
+
+			.block	{
+				@include span-columns(12);
+
+				@include media($tablet) {
+					text-align: left;
+				}
+
+				h2 {
+					margin-bottom: 0;
+				}
+
+				p {
+					&.strike {
+						text-decoration: line-through;
+						}
+				}
+
+				img {
+					@include span-columns(12);
 				}
 			}
 		}

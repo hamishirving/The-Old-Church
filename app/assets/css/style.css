@@ -3759,16 +3759,7 @@ input {
   z-index: 100; }
 
 .banner {
-  position: fixed;
-  bottom: 0;
-  padding: 15px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  background: #b20000;
-  z-index: 20; }
-  .banner p {
-    margin: 0; }
+  display: none; }
 
 .nav {
   text-align: center; }

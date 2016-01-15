@@ -8,11 +8,6 @@ html, body {
   height: 100%;
 }
 
-// Hide Typekit fonts until fully loaded
-.wf-loading { 
-  visibility: hidden; 
-}
-
 .container {
 	@include outer-container;
   height: 100%;
@@ -24,22 +19,4 @@ html, body {
 	@include media($tablet) {
 		padding: 0 5%;
 	}
-}
-
-.placeholder {
-	height: 500px;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -15%, 0);
-    transform: translate3d(0, -15%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
 }

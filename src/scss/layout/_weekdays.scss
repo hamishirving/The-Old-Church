@@ -9,9 +9,17 @@
 		@include span-columns(4);
 		margin-bottom: 60px;
 
+		&:first-child {
+			@include shift(2);
+		}
+
 		@include media($tablet) {
 			@include span-columns(6);
 			@include omega(2n);
+
+			&:first-child {
+				@include shift(0);
+			}
 		}
 
 		@include media($mobile) {

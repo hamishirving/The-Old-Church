@@ -1248,15 +1248,17 @@ input {
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
-        margin-right: 0;
-        padding-right: 5%;
-        text-align: left; }
+        padding: 0 2.5%;
+        text-align: left;
+        margin-bottom: 5%; }
         .news .news-outline .news-wrapper .copy:last-child {
           margin-right: 0; }
         .news .news-outline .news-wrapper .copy h2 {
           margin: 0; }
           .news .news-outline .news-wrapper .copy h2.strike {
             text-decoration: line-through; }
+        .news .news-outline .news-wrapper .copy:nth-child(odd) {
+          margin-right: 0; }
         @media screen and (max-width: 768px)  {
           .news .news-outline .news-wrapper .copy {
             float: left;
@@ -1270,7 +1272,8 @@ input {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 100%;
+        padding: 0 2.5%; }
         .news .news-outline .news-wrapper .block:last-child {
           margin-right: 0; }
         @media screen and (max-width: 768px)  {

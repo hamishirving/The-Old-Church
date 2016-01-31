@@ -42,9 +42,9 @@
 
 			.copy {
 				@include span-columns(6);
-				@include omega;
-				padding-right: 5%;
+				padding: 0 2.5%;
 				text-align: left;
+				margin-bottom: 5%;
 
 						h2 {
 							margin: 0;
@@ -54,6 +54,10 @@
 							}
 						}
 
+				&:nth-child(odd) {
+					@include omega;
+				}
+
 				@include media($tablet) {
 					@include span-columns(12);
 					margin-bottom: 40px;
@@ -62,10 +66,11 @@
 
 			.block	{
 				@include span-columns(12);
+				padding: 0 2.5%;
 
-				@include media($tablet) {
-					text-align: left;
-				}
+					@include media($tablet) {
+						text-align: left;
+					}
 
 				h2 {
 					margin-bottom: 0;
